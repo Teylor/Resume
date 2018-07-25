@@ -9,8 +9,8 @@ $(document).ready(function () {
         success: function (data) {
             $.each(data, function (i, item) {
                 $('#heroes').append($('<option>', {
-                    value: item.id,
-                    text: item.name
+                    value: item[i].id,
+                    text: item[i].name
                 }));
             })
         }
