@@ -1,10 +1,22 @@
-.body {
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.heroes-select {
-    width: 200px;
-    height: 50px;
+.header {
+    height: 95vh;
+    background-image: url("img/ai-close-up-code-160107.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+.header-title {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(212, 32, 47);
+    position: relative;
+    transform: translateX(10%);
 }
 
 .github-link {
