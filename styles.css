@@ -6,7 +6,7 @@
 
 .header {
     height: 95vh;
-    background-image: url("img/ai-close-up-code-160107.jpg");
+    background-image: linear-gradient(to right, rgb(95, 95, 95, 0.2), rgba(0, 0, 0, 0.9)), url("img/ai-close-up-code-160107.jpg");
     background-size: cover;
     background-position: top;
 }
@@ -17,6 +17,40 @@
     color: rgb(212, 32, 47);
     position: relative;
     transform: translateX(10%);
+}
+
+.navbar {
+    background-color: cadetblue;
+    height: 5vh;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 20px;
+}
+
+#about {
+    height: 100vh;
+}
+
+#skills {
+    height: 100vh;
+}
+
+#experiences {
+    height: 100vh;
 }
 
 .github-link {
