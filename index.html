@@ -11,7 +11,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -20,18 +21,22 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="./scripts/scripts.js"></script>
 </head>
 
 <body>
   <header class="header">
     <div class="header-title">
-      <h1>Ignasi's Curriculum Vitae</h1>
+      <a href="#about">Ignasi Galofré Pujol</a>
     </div>
+    <div class="header-subtitle">
+        <span>Computer Engineer</span>
+      </div>
   </header>
   <nav class="navbar">
     <ul>
       <li>
-        <a href="#about">Ignasi</a>
+        <a href="#about">About</a>
       </li>
       <li>
         <a href="#skills">Skills</a>
@@ -41,20 +46,61 @@
       </li>
     </ul>
   </nav>
-  <br>
   <div id="about">
     Igansi Galofré Pujol
   </div>
 
   <div id="skills">
-    Skills
+    <div class="container skills--languages">
+      <div class="row">
+        <div class="col-md-3 skills--languages-php">
+          <div class="row">
+            PHP
+          </div>
+          <div class="row">
+            90%
+          </div>
+        </div>
+        <div class="col-md-3 skills--languages-javascript">
+          <div class="row">
+            JavaScript / TypeScript
+          </div>
+          <div class="row">
+            90%
+          </div>
+        </div>
+        <div class="col-md-3 skills--languages-csharp">
+          <div class="row">
+            C# / .NET
+          </div>
+          <div class="row">
+            90%
+          </div>
+        </div>
+        <div class="col-md-3 skills--languages-cplus">
+          <div class="row">
+            C++
+          </div>
+          <div class="row">
+            80%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skills--database">
+
+    </div>
+    <div class="skills--design">
+
+    </div>
   </div>
 
   <div id="experiences">
     Experiences
   </div>
-  <br>
-  <a class="btn btn-success github-link" href="https://github.com/Teylor/Test" target="_blank">GitHub Repository</a>
+  <div class="footer">
+    <a class="btn btn-success github-link" href="https://github.com/Teylor/Test" target="_blank">GitHub Repository</a>
+  </div>
 </body>
 
 </html>
