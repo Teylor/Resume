@@ -1,0 +1,153 @@
+/* #region Color Declarations */
+$color-black: #1c0b19;
+$color-red: #a20021;
+$color-green: #14a892;
+$color-yellow: #c7ef00;
+$color-blue: #140152;
+/*#endregion*/
+
+/* #region Animations */
+$animate--about-hover: all 0.2s ease-in-out;
+@keyframes animate--about-intro {
+  0% {
+    opacity: 0;
+    top: 0%;
+  }
+  100% {
+    opacity: 1;
+    top: 40%;
+  }
+}
+@keyframes animate--about-subtitle {
+  0% {
+    opacity: 0;
+    left: 0%;
+  }
+  100% {
+    opacity: 1;
+    left: 15%;
+  }
+}
+/*#endregion*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(95, 95, 95, 0.2),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../img/header.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  color: $color-yellow;
+}
+
+.header-title {
+  a {
+    text-decoration: none;
+    color: $color-yellow;
+    animation: animate--about-intro 1.5s ease-in-out;
+    transition: $animate--about-hover;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    font-size: 40px;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      width: 1px;
+      height: 3px;
+      transition: $animate--about-hover;
+      transition-duration: 0.75s;
+      opacity: 0;
+    }
+    &:before {
+      left: calc(40%);
+      background-color: $color-yellow;
+    }
+    &:after {
+      right: calc(40%);
+      background-color: $color-yellow;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    a {
+      &:before,
+      &:after {
+        width: 70%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.header-subtitle {
+    animation: animate--about-subtitle 1.5s ease-in-out;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    font-size: 60px;
+}
+
+.navbar {
+  background-color: $color-green;
+  height: 5vh;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 30px;
+}
+
+.navbar ul li a {
+  color: $color-blue;
+  font-size: 20px;
+}
+
+.navbar ul li a.active {
+  color: white;
+  font-size: 20px;
+}
+
+#about {
+  height: 100vh;
+  padding-top: 40px;
+  background-color: $color-blue;
+}
+
+#skills {
+  height: 100vh;
+  padding-top: 40px;
+  background-color: $color-black;
+}
+
+#experiences {
+  height: 100vh;
+  padding-top: 40px;
+  background-color: $color-blue;
+}
+
+.github-link {
+  margin: 20px;
+}
