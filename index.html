@@ -4,18 +4,14 @@
 <head>
   <title>Ignasi Galofré Pujol CV</title>
   <link rel="icon" type="image/png" href="img/icon.png" />
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -30,8 +26,8 @@
       <a href="#about">Ignasi Galofré Pujol</a>
     </div>
     <div class="header-subtitle">
-        <span>Computer Engineer</span>
-      </div>
+      <span>Computer Engineer</span>
+    </div>
   </header>
   <nav class="navbar">
     <ul>
@@ -46,29 +42,52 @@
       </li>
     </ul>
   </nav>
-  <div id="about">
+  <section id="about">
     Igansi Galofré Pujol
-  </div>
+  </section>
 
-  <div id="skills">
+  <section id="skills">
     <div class="container skills--languages">
       <div class="row">
+
         <div class="col-md-3 skills--languages-php">
-          <div class="row">
+          <div class="row php-title">
             PHP
           </div>
-          <div class="row">
-            90%
+          <div class="row php-percentatge">
+            <div class="chart-php animate-external animate-internal">
+              <svg>
+                <circle class="circle--external-background"/>
+                <circle class="circle--external-percentatge"/>
+                <circle class="circle--internal-background"/>
+                <circle class="circle--internal-percentatge"/>
+              </svg>
+              <percentatge--external></percentatge--external>
+              <percentatge--internal></percentatge--internal>
+              <span class="percentatge--external-tooltip">Knowledge</span>
+              <span class="percentatge--internal-tooltip">Experience</span>
+            </div>
           </div>
         </div>
+
         <div class="col-md-3 skills--languages-javascript">
-          <div class="row">
+          <div class="row js-title">
             JavaScript / TypeScript
           </div>
-          <div class="row">
-            90%
+          <div class="row js-percentatge">
+            <div class="chart-js animate-external animate-internal">
+              <svg>
+                <circle class="circle--external-background"/>
+                <circle class="circle--external-percentatge"/>
+                <circle class="circle--internal-background"/>
+                <circle class="circle--internal-percentatge"/>
+              </svg>
+              <percentatge--external></percentatge--external>
+              <percentatge--internal></percentatge--internal>
+            </div>            
           </div>
         </div>
+
         <div class="col-md-3 skills--languages-csharp">
           <div class="row">
             C# / .NET
@@ -93,11 +112,11 @@
     <div class="skills--design">
 
     </div>
-  </div>
+  </section>
 
-  <div id="experiences">
-    Experiences
-  </div>
+  <section id="experiences">
+    <span>Experiences</span>
+  </section>
   <div class="footer">
     <a class="btn btn-success github-link" href="https://github.com/Teylor/Test" target="_blank">GitHub Repository</a>
   </div>
