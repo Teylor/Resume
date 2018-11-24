@@ -9,8 +9,6 @@
 
 - Skills
 * Add skills
-* Add circle percentatge
-* Add effects
 
 - Experiences
 * Add work experience
@@ -20,6 +18,8 @@
 - Hobbies
 
 - Footer
-* Add social medias / Github
+* Add social medias / Github / CodePen
 
 - Responsive
+
+- CDN images
