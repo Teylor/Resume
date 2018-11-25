@@ -1,11 +1,11 @@
 /* #region Color Declarations */
-$color-black: #1c0b19;
-$color-red: #a20021;
+$color-black: #F8B195;
+$color-red: #F67280;
 $color-red-light: #a85163;
-$color-green: #14a892;
+$color-green: #6C5B7B;
 $color-green-light: #8da842;
-$color-yellow: #c7ef00;
-$color-blue: #140152;
+$color-yellow: #F8B195;
+$color-blue: #355C7D;
 /*#endregion*/
 
 /* #region Animations */
@@ -30,6 +30,14 @@ $animate--about-hover: all 0.2s ease-in-out;
     left: 15%;
   }
 }
+@keyframes animate--about-legend {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*#endregion*/
 
 * {
@@ -51,57 +59,65 @@ $animate--about-hover: all 0.2s ease-in-out;
   position: relative;
   font-family: "Nunito", sans-serif;
   color: $color-yellow;
-}
 
-.header-title {
-  a {
-    text-decoration: none;
-    color: $color-yellow;
-    animation: animate--about-intro 1.5s ease-in-out;
-    transition: $animate--about-hover;
-    position: absolute;
-    left: 15%;
-    top: 40%;
-    font-size: 40px;
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -1px;
-      width: 1px;
-      height: 3px;
-      transition: $animate--about-hover;
-      transition-duration: 0.75s;
-      opacity: 0;
-    }
-    &:before {
-      left: calc(40%);
-      background-color: $color-yellow;
-    }
-    &:after {
-      right: calc(40%);
-      background-color: $color-yellow;
-    }
-  }
-
-  &:hover {
-    cursor: pointer;
+  .header-title {
     a {
-      &:before,
-      &:after {
-        width: 70%;
-        opacity: 1;
+      text-decoration: none;
+      color: $color-yellow;
+      animation: animate--about-intro 1.5s ease-in-out;
+      transition: $animate--about-hover;
+      position: absolute;
+      left: 15%;
+      top: 40%;
+      font-size: 40px;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        width: 1px;
+        height: 3px;
+        transition: $animate--about-hover;
+        transition-duration: 0.75s;
+        opacity: 0;
+      }
+      &::before {
+        left: calc(40%);
+        background-color: $color-yellow;
+      }
+      &::after {
+        right: calc(40%);
+        background-color: $color-yellow;
+      }
+    }
+  
+    &:hover {
+      cursor: pointer;
+      a {
+        &::before,
+        &::after {
+          width: 70%;
+          opacity: 1;
+        }
       }
     }
   }
-}
+  
+  .header-subtitle {
+    animation: animate--about-subtitle 1.5s ease-in-out;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    font-size: 60px;
+  }
 
-.header-subtitle {
-  animation: animate--about-subtitle 1.5s ease-in-out;
-  position: absolute;
-  left: 15%;
-  top: 50%;
-  font-size: 60px;
+  .header-legend {
+    animation: animate--about-legend 3s ease-in-out;
+    position: absolute;
+    left: 15%;
+    top: 65%;
+    font-size: 20px;
+  }
 }
 
 .navbar {
@@ -110,26 +126,26 @@ $animate--about-hover: all 0.2s ease-in-out;
   position: sticky;
   top: 0;
   z-index: 1;
-}
 
-.navbar ul {
-  list-style: none;
-  margin: 20px;
-}
-
-.navbar ul li {
-  display: inline;
-  margin: 30px;
-}
-
-.navbar ul li a {
-  color: $color-blue;
-  font-size: 20px;
-}
-
-.navbar ul li a.active {
-  color: white;
-  font-size: 20px;
+  ul {
+    list-style: none;
+    margin: 20px;
+  }
+  
+  ul li {
+    display: inline;
+    margin: 30px;
+  }
+  
+  ul li a {
+    color: white;
+    font-size: 20px;
+  }
+  
+  ul li a.active {
+    color: black;
+    font-size: 20px;
+  }
 }
 
 #about {
@@ -144,13 +160,20 @@ $animate--about-hover: all 0.2s ease-in-out;
   background-color: $color-black;
   position: relative;
 }
-
-.skills--languages-php {
-  .php-title {
-    color: $color-yellow;
-  }
-  .php-percentatge {
+.skills--languages {
+  span {
     color: $color-green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    position: relative;
+  }
+  .skills--languages-php {
+    .php-title {
+      color: $color-yellow;
+    }
+    .php-percentatge {
+      color: $color-green;
+    }
   }
 }
 
@@ -158,10 +181,6 @@ $animate--about-hover: all 0.2s ease-in-out;
   height: 100vh;
   padding-top: 40px;
   background-color: $color-blue;
-}
-
-.github-link {
-  margin: 20px;
 }
 
 /* -------CHARTS--------- */
@@ -213,20 +232,21 @@ $labelData: "";
     height: map-get($param, svgSize);
     margin: 0;
     position: relative;
+    left: 25%;
 
     &.animate-external {
       svg .circle--external-background {
         animation: offset map-get($param, duration) ease-in-out forwards;
         animation-delay: map-get($param, animationDelay);
       }
-      percentatge--external:after {
+      percentatge--external::after {
         animation: #{$chart}-external
           map-get($param, duration)
           steps(map-get($param, externalPercentage))
           forwards;
         animation-delay: map-get($param, animationDelay);
       }
-      percentatge--internal:after {
+      percentatge--internal::after {
         animation: #{$chart}-internal
           map-get($param, duration)
           steps(map-get($param, internalPercentage))
@@ -291,7 +311,7 @@ $labelData: "";
       top: calc(40% - #{map-get($param, labelFontSize) / 2});
       left: 0;
       font-size: 0;
-      &:after {
+      &::after {
         display: inline-block;
         content: $labelData;
         white-space: pre;
@@ -310,7 +330,7 @@ $labelData: "";
       top: calc(60% - #{map-get($param, labelFontSize) / 2});
       left: 0;
       font-size: 0;
-      &:after {
+      &::after {
         display: inline-block;
         content: $labelData;
         white-space: pre;
@@ -328,6 +348,7 @@ $labelData: "";
       margin-left: -60px;
       background-color: map-get($param, externalBackgroundColor);
       color: map-get($param, externalPercentatgeColor);
+      font-size: 15px;
       text-align: center;
       border-radius: 6px;
       position: absolute;
@@ -346,6 +367,7 @@ $labelData: "";
       margin-left: -60px;
       background-color: map-get($param, internalBackgroundColor);
       color: map-get($param, internalPercentatgeColor);
+      font-size: 15px;
       text-align: center;
       border-radius: 6px;
       position: absolute;
