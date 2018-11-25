@@ -1,11 +1,9 @@
 #TODO
 
-- Header
-* Add effects
+- Search palette
 
 - About
 * Write about Timeline (1991 - Born in Barcelona (27 years) school highschool univeristy travels)
-* Photo
 
 - Skills
 * Add skills
@@ -19,7 +17,12 @@
 
 - Footer
 * Add social medias / Github / CodePen
+* Photo
 
-- Responsive
+- Responsive 
+* Nav
+* Header
+* Sections
+* Footer
 
 - CDN images

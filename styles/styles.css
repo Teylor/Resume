@@ -21,6 +21,14 @@
     left: 15%;
   }
 }
+@keyframes animate--about-legend {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*#endregion*/
 * {
   margin: 0;
@@ -35,12 +43,11 @@
   background-position: top;
   position: relative;
   font-family: "Nunito", sans-serif;
-  color: #c7ef00;
+  color: #F8B195;
 }
-
-.header-title a {
+.header .header-title a {
   text-decoration: none;
-  color: #c7ef00;
+  color: #F8B195;
   animation: animate--about-intro 1.5s ease-in-out;
   transition: all 0.2s ease-in-out;
   position: absolute;
@@ -48,7 +55,7 @@
   top: 40%;
   font-size: 40px;
 }
-.header-title a:before, .header-title a:after {
+.header .header-title a::before, .header .header-title a::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -58,86 +65,90 @@
   transition-duration: 0.75s;
   opacity: 0;
 }
-.header-title a:before {
+.header .header-title a::before {
   left: calc(40%);
-  background-color: #c7ef00;
+  background-color: #F8B195;
 }
-.header-title a:after {
+.header .header-title a::after {
   right: calc(40%);
-  background-color: #c7ef00;
+  background-color: #F8B195;
 }
-.header-title:hover {
+.header .header-title:hover {
   cursor: pointer;
 }
-.header-title:hover a:before, .header-title:hover a:after {
+.header .header-title:hover a::before, .header .header-title:hover a::after {
   width: 70%;
   opacity: 1;
 }
-
-.header-subtitle {
+.header .header-subtitle {
   animation: animate--about-subtitle 1.5s ease-in-out;
   position: absolute;
   left: 15%;
   top: 50%;
   font-size: 60px;
 }
+.header .header-legend {
+  animation: animate--about-legend 3s ease-in-out;
+  position: absolute;
+  left: 15%;
+  top: 65%;
+  font-size: 20px;
+}
 
 .navbar {
-  background-color: #14a892;
+  background-color: #6C5B7B;
   height: 5vh;
   position: sticky;
   top: 0;
   z-index: 1;
 }
-
 .navbar ul {
   list-style: none;
   margin: 20px;
 }
-
 .navbar ul li {
   display: inline;
   margin: 30px;
 }
-
 .navbar ul li a {
-  color: #140152;
+  color: white;
   font-size: 20px;
 }
-
 .navbar ul li a.active {
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
 #about {
   height: 100vh;
   padding-top: 40px;
-  background-color: #140152;
+  background-color: #355C7D;
 }
 
 #skills {
   height: 100vh;
   padding-top: 40px;
-  background-color: #1c0b19;
+  background-color: #F8B195;
   position: relative;
 }
 
-.skills--languages-php .php-title {
-  color: #c7ef00;
+.skills--languages span {
+  color: #6C5B7B;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  position: relative;
 }
-.skills--languages-php .php-percentatge {
-  color: #14a892;
+.skills--languages .skills--languages-php .php-title {
+  color: #F8B195;
+}
+.skills--languages .skills--languages-php .php-percentatge {
+  color: #6C5B7B;
 }
 
 #experiences {
   height: 100vh;
   padding-top: 40px;
-  background-color: #140152;
-}
-
-.github-link {
-  margin: 20px;
+  background-color: #355C7D;
 }
 
 /* -------CHARTS--------- */
@@ -146,16 +157,17 @@
   height: 200px;
   margin: 0;
   position: relative;
+  left: 25%;
 }
 .chart-php.animate-external svg .circle--external-background, .chart-php.animate-external svg .circle--external-percentatge {
   animation: offset 3s ease-in-out forwards;
   animation-delay: 0.5s;
 }
-.chart-php.animate-external percentatge--external:after {
+.chart-php.animate-external percentatge--external::after {
   animation: chart-php-external 3s steps(50) forwards;
   animation-delay: 0.5s;
 }
-.chart-php.animate-external percentatge--internal:after {
+.chart-php.animate-external percentatge--internal::after {
   animation: chart-php-internal 3s steps(75) forwards;
   animation-delay: 0.5s;
 }
@@ -172,7 +184,7 @@
   cx: 50%;
   cy: 50%;
   fill: none;
-  stroke: #14a892;
+  stroke: #6C5B7B;
   stroke-width: 10px;
 }
 .chart-php svg .circle--external-percentatge {
@@ -188,7 +200,7 @@
   cx: 50%;
   cy: 50%;
   fill: none;
-  stroke: #a20021;
+  stroke: #F67280;
   stroke-width: 7px;
 }
 .chart-php svg .circle--internal-percentatge {
@@ -211,7 +223,7 @@
   left: 0;
   font-size: 0;
 }
-.chart-php percentatge--external:after {
+.chart-php percentatge--external::after {
   display: inline-block;
   content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
   white-space: pre;
@@ -230,7 +242,7 @@
   left: 0;
   font-size: 0;
 }
-.chart-php percentatge--internal:after {
+.chart-php percentatge--internal::after {
   display: inline-block;
   content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
   white-space: pre;
@@ -244,8 +256,9 @@
   bottom: 73%;
   left: 58%;
   margin-left: -60px;
-  background-color: #14a892;
+  background-color: #6C5B7B;
   color: #8da842;
+  font-size: 15px;
   text-align: center;
   border-radius: 6px;
   position: absolute;
@@ -261,8 +274,9 @@
   top: 73%;
   left: 58%;
   margin-left: -60px;
-  background-color: #a20021;
+  background-color: #F67280;
   color: #a85163;
+  font-size: 15px;
   text-align: center;
   border-radius: 6px;
   position: absolute;
@@ -287,16 +301,17 @@
   height: 200px;
   margin: 0;
   position: relative;
+  left: 25%;
 }
 .chart-js.animate-external svg .circle--external-background, .chart-js.animate-external svg .circle--external-percentatge {
   animation: offset 3s ease-in-out forwards;
   animation-delay: 0.5s;
 }
-.chart-js.animate-external percentatge--external:after {
+.chart-js.animate-external percentatge--external::after {
   animation: chart-js-external 3s steps(80) forwards;
   animation-delay: 0.5s;
 }
-.chart-js.animate-external percentatge--internal:after {
+.chart-js.animate-external percentatge--internal::after {
   animation: chart-js-internal 3s steps(20) forwards;
   animation-delay: 0.5s;
 }
@@ -313,7 +328,7 @@
   cx: 50%;
   cy: 50%;
   fill: none;
-  stroke: #14a892;
+  stroke: #6C5B7B;
   stroke-width: 10px;
 }
 .chart-js svg .circle--external-percentatge {
@@ -329,7 +344,7 @@
   cx: 50%;
   cy: 50%;
   fill: none;
-  stroke: #a20021;
+  stroke: #F67280;
   stroke-width: 7px;
 }
 .chart-js svg .circle--internal-percentatge {
@@ -352,7 +367,7 @@
   left: 0;
   font-size: 0;
 }
-.chart-js percentatge--external:after {
+.chart-js percentatge--external::after {
   display: inline-block;
   content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
   white-space: pre;
@@ -371,7 +386,7 @@
   left: 0;
   font-size: 0;
 }
-.chart-js percentatge--internal:after {
+.chart-js percentatge--internal::after {
   display: inline-block;
   content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
   white-space: pre;
@@ -385,8 +400,9 @@
   bottom: 73%;
   left: 58%;
   margin-left: -60px;
-  background-color: #14a892;
+  background-color: #6C5B7B;
   color: #8da842;
+  font-size: 15px;
   text-align: center;
   border-radius: 6px;
   position: absolute;
@@ -402,8 +418,9 @@
   top: 73%;
   left: 58%;
   margin-left: -60px;
-  background-color: #a20021;
+  background-color: #F67280;
   color: #a85163;
+  font-size: 15px;
   text-align: center;
   border-radius: 6px;
   position: absolute;
