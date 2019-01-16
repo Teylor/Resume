@@ -8,7 +8,7 @@
 - Skills
 * Add skills
 
-- Experiences
+- Experience
 * Add work experience
 * Add titles
 * Add Yuzz
