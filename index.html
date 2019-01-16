@@ -19,6 +19,7 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
   <script src="./scripts/scripts.js"></script>
 </head>
 
@@ -48,7 +49,37 @@
     </ul>
   </nav>
   <section id="about">
-    Igansi Galofré Pujol
+    <h1>Ignasi's Galofré Pujol</h1>
+    <div class="flex-parent">
+      <div class="input-flex-container">
+        <div class="input active">
+          <span data-year="2007" data-info="E.S.O."></span>
+        </div>
+        <div class="input">
+          <span data-year="2009" data-info="Bachelor"></span>
+        </div>
+        <div class="input">
+          <span data-year="2015" data-info="Degree"></span>
+        </div>
+        <div class="input">
+          <span data-year="2016" data-info="Talentier"></span>
+        </div>
+        <div class="input">
+          <span data-year="2018" data-info="Logitravel"></span>
+        </div>
+        <div class="input">
+          <span data-year="Present" data-info="Freelancer"></span>
+        </div>
+      </div>
+      <div class="description-flex-container">
+        <p class="active">2003-2007 E.S.O Lluís Vives School - Palma de Mallorca</p>
+        <p>2007-2009 Bachelor Santa María School - Palma de Mallorca</p>
+        <p>2009-2015 Degree FIB UPC - Barcelona</p>
+        <p>2015-2016 Developer in Talentier - Barcelona</p>
+        <p>2016-2018 Developer in Logitravel - Palma de Mallorca</p>
+        <p>2018-Present Working as a Freelancer - Around the world</p>
+      </div>
+    </div>
   </section>
 
   <section id="skills">
@@ -107,9 +138,16 @@
     <span>Experiences</span>
   </section>
   <div class="footer">
-    <a href="https://github.com/Teylor/Resume" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://codepen.io/Teylor6/" target="_blank"><i class="fab fa-codepen"></i></a>
+    <a href="https://github.com/Teylor" target="_blank" data-toggle="tooltip" data-placement="top" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://codepen.io/Teylor6/" target="_blank" data-toggle="tooltip" data-placement="top" title="CodePen"><i class="fab fa-codepen"></i></a>
+    <a href="/doc/Test.pdf" download data-toggle="tooltip" data-placement="top" title="Resume"><i class="far fa-file-pdf"></i></a>
   </div>
 </body>
 
 </html>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>

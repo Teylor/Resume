@@ -1,46 +1,10 @@
-/* #region Color Declarations */
-$color-black: #F8B195;
-$color-red: #F67280;
-$color-red-light: #a85163;
-$color-green: #6C5B7B;
-$color-green-light: #8da842;
-$color-yellow: #F8B195;
-$color-blue: #355C7D;
-/*#endregion*/
+@import "base/colors";
+@import "base/animations";
+@import "about/about";
 
-/* #region Animations */
-$animate--about-hover: all 0.2s ease-in-out;
-@keyframes animate--about-intro {
-  0% {
-    opacity: 0;
-    top: 0%;
-  }
-  100% {
-    opacity: 1;
-    top: 40%;
-  }
-}
-@keyframes animate--about-subtitle {
-  0% {
-    opacity: 0;
-    left: 0%;
-  }
-  100% {
-    opacity: 1;
-    left: 15%;
-  }
-}
-@keyframes animate--about-legend {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/*#endregion*/
-
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -90,7 +54,7 @@ $animate--about-hover: all 0.2s ease-in-out;
         background-color: $color-yellow;
       }
     }
-  
+
     &:hover {
       cursor: pointer;
       a {
@@ -102,7 +66,7 @@ $animate--about-hover: all 0.2s ease-in-out;
       }
     }
   }
-  
+
   .header-subtitle {
     animation: animate--about-subtitle 1.5s ease-in-out;
     position: absolute;
@@ -131,17 +95,17 @@ $animate--about-hover: all 0.2s ease-in-out;
     list-style: none;
     margin: 20px;
   }
-  
+
   ul li {
     display: inline;
     margin: 30px;
   }
-  
+
   ul li a {
     color: white;
     font-size: 20px;
   }
-  
+
   ul li a.active {
     color: black;
     font-size: 20px;
@@ -163,7 +127,7 @@ $animate--about-hover: all 0.2s ease-in-out;
 .skills--languages {
   span {
     color: $color-green;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 30px;
     position: relative;
   }
@@ -236,7 +200,7 @@ $labelData: "";
 
     &.animate-external {
       svg .circle--external-background {
-        animation: offset map-get($param, duration) ease-in-out forwards;
+        animation: chart-offset map-get($param, duration) ease-in-out forwards;
         animation-delay: map-get($param, animationDelay);
       }
       percentatge--external::after {
@@ -257,7 +221,7 @@ $labelData: "";
 
     &.animate-internal {
       svg .circle--internal-background {
-        animation: offset map-get($param, duration) ease-in-out forwards;
+        animation: chart-offset map-get($param, duration) ease-in-out forwards;
         animation-delay: map-get($param, animationDelay);
       }
     }
@@ -393,10 +357,5 @@ $labelData: "";
           (-(map-get($param, internalPercentage)))
       );
     }
-  }
-}
-@keyframes offset {
-  100% {
-    stroke-dashoffset: 0;
   }
 }
