@@ -8,16 +8,13 @@
 - Skills
 * Add skills
 
-- Experiences
+- Experience
 * Add work experience
 * Add titles
 * Add Yuzz
 
-- Hobbies
-
 - Footer
-* Add social medias / Github / CodePen
-* Photo
+* Add social medias
 
 - Responsive 
 * Nav
