@@ -1,4 +1,5 @@
 section#experience {
+  height: 100vh;
   padding-top: 40px;
   background-color: $color-blue;
   position: relative;
@@ -16,7 +17,7 @@ section#experience:before {
 }
 section#experience article {
   width: 100%;
-  margin: 0 0 20px 0;
+  height: 33%;
   position: relative;
 }
 section#experience article:after {
@@ -32,8 +33,8 @@ section#experience article div.inner {
 }
 section#experience article div.inner span.date {
   display: block;
-  width: 60px;
-  height: 50px;
+  width: 70px;
+  height: 68px;
   padding: 5px 0;
   position: absolute;
   top: 0;
@@ -52,14 +53,11 @@ section#experience article div.inner span.date span {
   display: block;
   text-align: center;
 }
-section#experience article div.inner span.date span.day {
-  font-size: 10px;
-}
 section#experience article div.inner span.date span.month {
-  font-size: 18px;
+  font-size: 20px;
 }
 section#experience article div.inner span.date span.year {
-  font-size: 10px;
+  font-size: 12px;
 }
 section#experience article div.inner h2 {
   padding: 15px;
@@ -112,7 +110,7 @@ section#experience article:nth-child(3) div.inner h2 {
 section#experience article:nth-child(3) div.inner h2:after {
   background: #e67e22;
 }
-section#experience article:nth-child(4) div.inner h2 {
+/* section#experience article:nth-child(4) div.inner h2 {
   background: #1abc9c;
 }
 section#experience article:nth-child(4) div.inner h2:after {
@@ -123,7 +121,7 @@ section#experience article:nth-child(5) div.inner h2 {
 }
 section#experience article:nth-child(5) div.inner h2:after {
   background: #9b59b6;
-}
+} */
 
 @media (max-width: 1024px) {
   section#experience:before {
@@ -131,19 +129,6 @@ section#experience article:nth-child(5) div.inner h2:after {
   }
   section#experience article div.inner span.date {
     left: 10%;
-  }
-  section#experience article div.inner span.date span {
-    display: block;
-    text-align: center;
-  }
-  section#experience article div.inner span.date span.day {
-    font-size: 10px;
-  }
-  section#experience article div.inner span.date span.month {
-    font-size: 18px;
-  }
-  section#experience article div.inner span.date span.year {
-    font-size: 10px;
   }
 
   section#experience article div.inner {
@@ -168,8 +153,8 @@ section#experience article:nth-child(5) div.inner h2:after {
 
 @media (max-width: 500px) {
   section#experience article div.inner {
-    width: 70%;
+    width: 65%;
     border-radius: 6px;
-    margin-left: 22%;
+    margin-left: 25%;
   }
 }

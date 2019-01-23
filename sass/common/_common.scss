@@ -119,12 +119,12 @@
       display: inline;
       margin: 111px;
     }
-  
+
     ul li a {
       color: white;
       font-size: 25px;
     }
-  
+
     ul li a.active {
       color: $color-yellow;
       font-size: 25px;
@@ -146,12 +146,12 @@
       display: inline;
       margin: 80px;
     }
-  
+
     ul li a {
       color: white;
       font-size: 25px;
     }
-  
+
     ul li a.active {
       color: $color-yellow;
       font-size: 25px;
@@ -160,7 +160,7 @@
 }
 
 @media (max-width: 500px) {
-  .header {  
+  .header {
     .header-title {
       a {
         animation: animate--about-intro__small 1.5s ease-in-out;
@@ -168,12 +168,12 @@
         font-size: 20px;
       }
     }
-  
+
     .header-subtitle {
       top: 40%;
       font-size: 30px;
     }
-  
+
     .header-legend {
       left: 5%;
       top: 55%;
@@ -194,12 +194,12 @@
       display: inline;
       margin: 30px;
     }
-  
+
     ul li a {
       color: white;
       font-size: 20px;
     }
-  
+
     ul li a.active {
       color: $color-yellow;
       font-size: 20px;
@@ -208,8 +208,7 @@
 }
 
 @media (max-width: 375px) {
-
-  .header {  
+  .header {
     .header-title {
       a {
         animation: animate--about-intro__small 1.5s ease-in-out;
@@ -217,12 +216,12 @@
         font-size: 20px;
       }
     }
-  
+
     .header-subtitle {
       top: 40%;
       font-size: 30px;
     }
-  
+
     .header-legend {
       left: 5%;
       top: 55%;
@@ -243,12 +242,12 @@
       display: inline;
       margin: 20px;
     }
-  
+
     ul li a {
       color: white;
       font-size: 20px;
     }
-  
+
     ul li a.active {
       color: $color-yellow;
       font-size: 20px;
@@ -257,9 +256,25 @@
 }
 
 .footer {
-  margin-top: 50px;
-}
-
-.footer-profile--image {
-  border-radius: 50%;
+  background-color: #ffd882;
+  .footer-profile {
+    text-align: center;
+    padding: 6px;
+    .footer-profile--image {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+    }
+    .footer-profile--text {
+      font-size: 21px;
+      white-space: pre-line;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer-social {
+    text-align: center;
+  }
 }
