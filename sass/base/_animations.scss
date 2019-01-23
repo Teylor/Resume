@@ -10,6 +10,17 @@ $animate--about-hover: all 0.2s ease-in-out;
   }
 }
 
+@keyframes animate--about-intro__small {
+  0% {
+    opacity: 0;
+    top: 0%;
+  }
+  100% {
+    opacity: 1;
+    top: 30%;
+  }
+}
+
 @keyframes animate--about-subtitle {
   0% {
     opacity: 0;
