@@ -3,6 +3,27 @@ $(document).ready(function () {
         $("a").removeClass("active");
         $(this).addClass("active");
     });
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+});
+
+$("#about-link").on('click', function() {
+    $("html, body").animate({
+        scrollTop: $("#about").offset().top
+    }, 1000);
+});
+
+$("#skills-link").on('click', function() {
+    $("html, body").animate({
+        scrollTop: $("#skills").offset().top
+    }, 1000);
+});
+
+$("#experience-link").on('click', function() {
+    $("html, body").animate({
+        scrollTop: $("#experience").offset().top
+    }, 1000);
 });
 
 $(document).on('scroll', function () {
@@ -21,15 +42,15 @@ $(document).on('scroll', function () {
         $(".navbar ul>li:nth-child(3) a").addClass("active");
 });
 
-$(function(){
-	var inputs = $('.input');
-	var paras = $('.description-flex-container').find('p');
-	$(inputs).click(function(){
-		var t = $(this),
-				ind = t.index(),
-				matchedPara = $(paras).eq(ind);
-		
-		$(t).add(matchedPara).addClass('active');
-		$(inputs).not(t).add($(paras).not(matchedPara)).removeClass('active');
-	});
+$(function () {
+    var inputs = $('.input');
+    var paras = $('.description-flex-container').find('p');
+    $(inputs).click(function () {
+        var t = $(this),
+            ind = t.index(),
+            matchedPara = $(paras).eq(ind);
+
+        $(t).add(matchedPara).addClass('active');
+        $(inputs).not(t).add($(paras).not(matchedPara)).removeClass('active');
+    });
 });
