@@ -13,11 +13,8 @@
 * Add titles
 * Add Yuzz
 
-- Hobbies
-
 - Footer
-* Add social medias / Github / CodePen
-* Photo
+* Add social medias
 
 - Responsive 
 * Nav

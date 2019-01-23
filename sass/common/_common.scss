@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(95, 95, 95, 0.2),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../img/header.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  color: $color-yellow;
+
+  .header-title {
+    a {
+      text-decoration: none;
+      color: $color-yellow;
+      animation: animate--about-intro 1.5s ease-in-out;
+      transition: $animate--about-hover;
+      position: absolute;
+      left: 15%;
+      top: 40%;
+      font-size: 40px;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        width: 1px;
+        height: 3px;
+        transition: $animate--about-hover;
+        transition-duration: 0.75s;
+        opacity: 0;
+      }
+      &::before {
+        left: calc(40%);
+        background-color: $color-yellow;
+      }
+      &::after {
+        right: calc(40%);
+        background-color: $color-yellow;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      a {
+        &::before,
+        &::after {
+          width: 70%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .header-subtitle {
+    animation: animate--about-subtitle 1.5s ease-in-out;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    font-size: 60px;
+  }
+
+  .header-legend {
+    animation: animate--about-legend 3s ease-in-out;
+    position: absolute;
+    left: 15%;
+    top: 65%;
+    font-size: 20px;
+  }
+}
+
+.navbar {
+  background-color: $color-green;
+  height: 5vh;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  ul li {
+    list-style: none;
+    display: inline;
+    margin: 150px;
+  }
+
+  ul li a {
+    color: white;
+    font-size: 25px;
+  }
+
+  ul li a.active {
+    color: $color-yellow;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    background-color: $color-green;
+    height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    ul li {
+      list-style: none;
+      display: inline;
+      margin: 111px;
+    }
+  
+    ul li a {
+      color: white;
+      font-size: 25px;
+    }
+  
+    ul li a.active {
+      color: $color-yellow;
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: $color-green;
+    height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    ul li {
+      list-style: none;
+      display: inline;
+      margin: 80px;
+    }
+  
+    ul li a {
+      color: white;
+      font-size: 25px;
+    }
+  
+    ul li a.active {
+      color: $color-yellow;
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    background-color: $color-green;
+    height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    ul li {
+      list-style: none;
+      display: inline;
+      margin: 30px;
+    }
+  
+    ul li a {
+      color: white;
+      font-size: 20px;
+    }
+  
+    ul li a.active {
+      color: $color-yellow;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    background-color: $color-green;
+    height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    ul li {
+      list-style: none;
+      display: inline;
+      margin: 20px;
+    }
+  
+    ul li a {
+      color: white;
+      font-size: 20px;
+    }
+  
+    ul li a.active {
+      color: $color-yellow;
+      font-size: 20px;
+    }
+  }
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.footer-profile--image {
+  border-radius: 50%;
+}

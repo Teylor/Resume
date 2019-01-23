@@ -1,13 +1,13 @@
 #experience {
   height: 100vh;
   padding-top: 40px;
-  background-color: #355C7D;
+  background-color: $color-blue;
 }
 
 section#experience {
     height: 100vh;
     padding-top: 40px;
-    background-color: #355C7D;
+    background-color: $color-blue;
     position: relative;
   }
   section#experience:before {

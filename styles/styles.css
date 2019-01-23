@@ -1,10 +1,3 @@
-/* $color-black: #F8B195;
-$color-red: #F67280;
-$color-red-light: #a85163;
-$color-green: #6C5B7B;
-$color-green-light: #8da842;
-$color-yellow: #F8B195;
-$color-blue: #355C7D; */
 @keyframes animate--about-intro {
   0% {
     opacity: 0;
@@ -38,8 +31,194 @@ $color-blue: #355C7D; */
     stroke-dashoffset: 0;
   }
 }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right, rgba(95, 95, 95, 0.2), rgba(0, 0, 0, 0.9)), url("../img/header.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  color: #FFCC5C;
+}
+.header .header-title a {
+  text-decoration: none;
+  color: #FFCC5C;
+  animation: animate--about-intro 1.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  left: 15%;
+  top: 40%;
+  font-size: 40px;
+}
+.header .header-title a::before, .header .header-title a::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 1px;
+  height: 3px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.75s;
+  opacity: 0;
+}
+.header .header-title a::before {
+  left: calc(40%);
+  background-color: #FFCC5C;
+}
+.header .header-title a::after {
+  right: calc(40%);
+  background-color: #FFCC5C;
+}
+.header .header-title:hover {
+  cursor: pointer;
+}
+.header .header-title:hover a::before, .header .header-title:hover a::after {
+  width: 70%;
+  opacity: 1;
+}
+.header .header-subtitle {
+  animation: animate--about-subtitle 1.5s ease-in-out;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  font-size: 60px;
+}
+.header .header-legend {
+  animation: animate--about-legend 3s ease-in-out;
+  position: absolute;
+  left: 15%;
+  top: 65%;
+  font-size: 20px;
+}
+
+.navbar {
+  background-color: #2656B2;
+  height: 5vh;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline;
+  margin: 150px;
+}
+.navbar ul li a {
+  color: white;
+  font-size: 25px;
+}
+.navbar ul li a.active {
+  color: #FFCC5C;
+  font-size: 25px;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    background-color: #2656B2;
+    height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .navbar ul li {
+    list-style: none;
+    display: inline;
+    margin: 111px;
+  }
+  .navbar ul li a {
+    color: white;
+    font-size: 25px;
+  }
+  .navbar ul li a.active {
+    color: #FFCC5C;
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #2656B2;
+    height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .navbar ul li {
+    list-style: none;
+    display: inline;
+    margin: 80px;
+  }
+  .navbar ul li a {
+    color: white;
+    font-size: 25px;
+  }
+  .navbar ul li a.active {
+    color: #FFCC5C;
+    font-size: 25px;
+  }
+}
+@media (max-width: 450px) {
+  .navbar {
+    background-color: #2656B2;
+    height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .navbar ul li {
+    list-style: none;
+    display: inline;
+    margin: 30px;
+  }
+  .navbar ul li a {
+    color: white;
+    font-size: 20px;
+  }
+  .navbar ul li a.active {
+    color: #FFCC5C;
+    font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .navbar {
+    background-color: #2656B2;
+    height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .navbar ul li {
+    list-style: none;
+    display: inline;
+    margin: 20px;
+  }
+  .navbar ul li a {
+    color: white;
+    font-size: 20px;
+  }
+  .navbar ul li a.active {
+    color: #FFCC5C;
+    font-size: 20px;
+  }
+}
 .footer {
   margin-top: 50px;
+}
+
+.footer-profile--image {
+  border-radius: 50%;
+}
+
+#about {
+  height: 100vh;
+  padding-top: 40px;
+  background-color: #355C7D;
 }
 
 h1 {
@@ -235,6 +414,315 @@ h1 span {
     min-height: 950px;
   }
 }
+#skills {
+  height: 100vh;
+  padding-top: 40px;
+  background-color: #F8B195;
+  position: relative;
+}
+
+.skills--languages span {
+  color: #2656B2;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  position: relative;
+}
+.skills--languages .skills--languages-php .php-title {
+  color: #FFCC5C;
+}
+.skills--languages .skills--languages-php .php-percentatge {
+  color: #2656B2;
+}
+
+/* -------CHARTS--------- */
+.chart-php {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  position: relative;
+  left: 25%;
+}
+.chart-php.animate-external svg .circle--external-background, .chart-php.animate-external svg .circle--external-percentatge {
+  animation: chart-offset 3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+.chart-php.animate-external percentatge--external::after {
+  animation: chart-php-external 3s steps(50) forwards;
+  animation-delay: 0.5s;
+}
+.chart-php.animate-external percentatge--internal::after {
+  animation: chart-php-internal 3s steps(75) forwards;
+  animation-delay: 0.5s;
+}
+.chart-php.animate-internal svg .circle--internal-background, .chart-php.animate-internal svg .circle--internal-percentatge {
+  animation: chart-offset 3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+.chart-php svg {
+  width: 100%;
+  height: 100%;
+}
+.chart-php svg .circle--external-background, .chart-php svg .circle--external-percentatge {
+  r: 95px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #2656B2;
+  stroke-width: 10px;
+}
+.chart-php svg .circle--external-percentatge {
+  stroke: #8da842;
+  stroke-dasharray: 298.3px 596.6px;
+  stroke-dashoffset: 298.3px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-php svg .circle--internal-background, .chart-php svg .circle--internal-percentatge {
+  r: 90px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #F67280;
+  stroke-width: 7px;
+}
+.chart-php svg .circle--internal-percentatge {
+  stroke: #a85163;
+  stroke-dasharray: 423.9px 565.2px;
+  stroke-dashoffset: 423.9px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-php percentatge--external {
+  display: inline-block;
+  width: 100%;
+  height: 2.5rem;
+  overflow: hidden;
+  text-align: center;
+  color: #8da842;
+  position: absolute;
+  top: calc(40% - 1.25rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-php percentatge--external::after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.chart-php percentatge--internal {
+  display: inline-block;
+  width: 100%;
+  height: 2.5rem;
+  overflow: hidden;
+  text-align: center;
+  color: #a85163;
+  position: absolute;
+  top: calc(60% - 1.25rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-php percentatge--internal::after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.chart-php .percentatge--external-tooltip {
+  visibility: hidden;
+  width: 84px;
+  height: 22px;
+  bottom: 73%;
+  left: 58%;
+  margin-left: -60px;
+  background-color: #2656B2;
+  color: #8da842;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.chart-php:hover .percentatge--external-tooltip {
+  visibility: visible;
+}
+.chart-php .percentatge--internal-tooltip {
+  visibility: hidden;
+  width: 84px;
+  height: 22px;
+  top: 73%;
+  left: 58%;
+  margin-left: -60px;
+  background-color: #F67280;
+  color: #a85163;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.chart-php:hover .percentatge--internal-tooltip {
+  visibility: visible;
+}
+
+@keyframes chart-php-external {
+  100% {
+    transform: translateY(-125rem);
+  }
+}
+@keyframes chart-php-internal {
+  100% {
+    transform: translateY(-187.5rem);
+  }
+}
+.chart-js {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  position: relative;
+  left: 25%;
+}
+.chart-js.animate-external svg .circle--external-background, .chart-js.animate-external svg .circle--external-percentatge {
+  animation: chart-offset 3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+.chart-js.animate-external percentatge--external::after {
+  animation: chart-js-external 3s steps(80) forwards;
+  animation-delay: 0.5s;
+}
+.chart-js.animate-external percentatge--internal::after {
+  animation: chart-js-internal 3s steps(20) forwards;
+  animation-delay: 0.5s;
+}
+.chart-js.animate-internal svg .circle--internal-background, .chart-js.animate-internal svg .circle--internal-percentatge {
+  animation: chart-offset 3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+.chart-js svg {
+  width: 100%;
+  height: 100%;
+}
+.chart-js svg .circle--external-background, .chart-js svg .circle--external-percentatge {
+  r: 95px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #2656B2;
+  stroke-width: 10px;
+}
+.chart-js svg .circle--external-percentatge {
+  stroke: #8da842;
+  stroke-dasharray: 477.28px 596.6px;
+  stroke-dashoffset: 477.28px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-js svg .circle--internal-background, .chart-js svg .circle--internal-percentatge {
+  r: 90px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #F67280;
+  stroke-width: 7px;
+}
+.chart-js svg .circle--internal-percentatge {
+  stroke: #a85163;
+  stroke-dasharray: 113.04px 565.2px;
+  stroke-dashoffset: 113.04px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-js percentatge--external {
+  display: inline-block;
+  width: 100%;
+  height: 2.5rem;
+  overflow: hidden;
+  text-align: center;
+  color: #8da842;
+  position: absolute;
+  top: calc(40% - 1.25rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-js percentatge--external::after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.chart-js percentatge--internal {
+  display: inline-block;
+  width: 100%;
+  height: 2.5rem;
+  overflow: hidden;
+  text-align: center;
+  color: #a85163;
+  position: absolute;
+  top: calc(60% - 1.25rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-js percentatge--internal::after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.chart-js .percentatge--external-tooltip {
+  visibility: hidden;
+  width: 84px;
+  height: 22px;
+  bottom: 73%;
+  left: 58%;
+  margin-left: -60px;
+  background-color: #2656B2;
+  color: #8da842;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.chart-js:hover .percentatge--external-tooltip {
+  visibility: visible;
+}
+.chart-js .percentatge--internal-tooltip {
+  visibility: hidden;
+  width: 84px;
+  height: 22px;
+  top: 73%;
+  left: 58%;
+  margin-left: -60px;
+  background-color: #F67280;
+  color: #a85163;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.chart-js:hover .percentatge--internal-tooltip {
+  visibility: visible;
+}
+
+@keyframes chart-js-external {
+  100% {
+    transform: translateY(-200rem);
+  }
+}
+@keyframes chart-js-internal {
+  100% {
+    transform: translateY(-50rem);
+  }
+}
 #experience {
   height: 100vh;
   padding-top: 40px;
@@ -391,419 +879,6 @@ section#experience article:nth-child(5) div.inner h2 {
 
 section#experience article:nth-child(5) div.inner h2:after {
   background: #9b59b6;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right, rgba(95, 95, 95, 0.2), rgba(0, 0, 0, 0.9)), url("../img/header.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  font-family: "Nunito", sans-serif;
-  color: #F8B195;
-}
-.header .header-title a {
-  text-decoration: none;
-  color: #F8B195;
-  animation: animate--about-intro 1.5s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  position: absolute;
-  left: 15%;
-  top: 40%;
-  font-size: 40px;
-}
-.header .header-title a::before, .header .header-title a::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  width: 1px;
-  height: 3px;
-  transition: all 0.2s ease-in-out;
-  transition-duration: 0.75s;
-  opacity: 0;
-}
-.header .header-title a::before {
-  left: calc(40%);
-  background-color: #F8B195;
-}
-.header .header-title a::after {
-  right: calc(40%);
-  background-color: #F8B195;
-}
-.header .header-title:hover {
-  cursor: pointer;
-}
-.header .header-title:hover a::before, .header .header-title:hover a::after {
-  width: 70%;
-  opacity: 1;
-}
-.header .header-subtitle {
-  animation: animate--about-subtitle 1.5s ease-in-out;
-  position: absolute;
-  left: 15%;
-  top: 50%;
-  font-size: 60px;
-}
-.header .header-legend {
-  animation: animate--about-legend 3s ease-in-out;
-  position: absolute;
-  left: 15%;
-  top: 65%;
-  font-size: 20px;
-}
-
-.navbar {
-  background-color: #6C5B7B;
-  height: 5vh;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-.navbar ul {
-  list-style: none;
-  margin: 20px;
-}
-.navbar ul li {
-  display: inline;
-  margin: 30px;
-}
-.navbar ul li a {
-  color: white;
-  font-size: 20px;
-}
-.navbar ul li a.active {
-  color: black;
-  font-size: 20px;
-}
-
-#about {
-  height: 100vh;
-  padding-top: 40px;
-  background-color: #355C7D;
-}
-
-#skills {
-  height: 100vh;
-  padding-top: 40px;
-  background-color: #F8B195;
-  position: relative;
-}
-
-.skills--languages span {
-  color: #6C5B7B;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
-  position: relative;
-}
-.skills--languages .skills--languages-php .php-title {
-  color: #F8B195;
-}
-.skills--languages .skills--languages-php .php-percentatge {
-  color: #6C5B7B;
-}
-
-#experience {
-  height: 100vh;
-  padding-top: 40px;
-  background-color: #355C7D;
-}
-
-/* -------CHARTS--------- */
-.chart-php {
-  width: 200px;
-  height: 200px;
-  margin: 0;
-  position: relative;
-  left: 25%;
-}
-.chart-php.animate-external svg .circle--external-background, .chart-php.animate-external svg .circle--external-percentatge {
-  animation: chart-offset 3s ease-in-out forwards;
-  animation-delay: 0.5s;
-}
-.chart-php.animate-external percentatge--external::after {
-  animation: chart-php-external 3s steps(50) forwards;
-  animation-delay: 0.5s;
-}
-.chart-php.animate-external percentatge--internal::after {
-  animation: chart-php-internal 3s steps(75) forwards;
-  animation-delay: 0.5s;
-}
-.chart-php.animate-internal svg .circle--internal-background, .chart-php.animate-internal svg .circle--internal-percentatge {
-  animation: chart-offset 3s ease-in-out forwards;
-  animation-delay: 0.5s;
-}
-.chart-php svg {
-  width: 100%;
-  height: 100%;
-}
-.chart-php svg .circle--external-background, .chart-php svg .circle--external-percentatge {
-  r: 95px;
-  cx: 50%;
-  cy: 50%;
-  fill: none;
-  stroke: #6C5B7B;
-  stroke-width: 10px;
-}
-.chart-php svg .circle--external-percentatge {
-  stroke: #8da842;
-  stroke-dasharray: 298.3px 596.6px;
-  stroke-dashoffset: 298.3px;
-  stroke-linecap: round;
-  transform-origin: 50% 50%;
-  transform: rotate(-90deg);
-}
-.chart-php svg .circle--internal-background, .chart-php svg .circle--internal-percentatge {
-  r: 90px;
-  cx: 50%;
-  cy: 50%;
-  fill: none;
-  stroke: #F67280;
-  stroke-width: 7px;
-}
-.chart-php svg .circle--internal-percentatge {
-  stroke: #a85163;
-  stroke-dasharray: 423.9px 565.2px;
-  stroke-dashoffset: 423.9px;
-  stroke-linecap: round;
-  transform-origin: 50% 50%;
-  transform: rotate(-90deg);
-}
-.chart-php percentatge--external {
-  display: inline-block;
-  width: 100%;
-  height: 2.5rem;
-  overflow: hidden;
-  text-align: center;
-  color: #8da842;
-  position: absolute;
-  top: calc(40% - 1.25rem);
-  left: 0;
-  font-size: 0;
-}
-.chart-php percentatge--external::after {
-  display: inline-block;
-  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
-  white-space: pre;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-}
-.chart-php percentatge--internal {
-  display: inline-block;
-  width: 100%;
-  height: 2.5rem;
-  overflow: hidden;
-  text-align: center;
-  color: #a85163;
-  position: absolute;
-  top: calc(60% - 1.25rem);
-  left: 0;
-  font-size: 0;
-}
-.chart-php percentatge--internal::after {
-  display: inline-block;
-  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
-  white-space: pre;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-}
-.chart-php .percentatge--external-tooltip {
-  visibility: hidden;
-  width: 84px;
-  height: 22px;
-  bottom: 73%;
-  left: 58%;
-  margin-left: -60px;
-  background-color: #6C5B7B;
-  color: #8da842;
-  font-size: 15px;
-  text-align: center;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-}
-.chart-php:hover .percentatge--external-tooltip {
-  visibility: visible;
-}
-.chart-php .percentatge--internal-tooltip {
-  visibility: hidden;
-  width: 84px;
-  height: 22px;
-  top: 73%;
-  left: 58%;
-  margin-left: -60px;
-  background-color: #F67280;
-  color: #a85163;
-  font-size: 15px;
-  text-align: center;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-}
-.chart-php:hover .percentatge--internal-tooltip {
-  visibility: visible;
-}
-
-@keyframes chart-php-external {
-  100% {
-    transform: translateY(-125rem);
-  }
-}
-@keyframes chart-php-internal {
-  100% {
-    transform: translateY(-187.5rem);
-  }
-}
-.chart-js {
-  width: 200px;
-  height: 200px;
-  margin: 0;
-  position: relative;
-  left: 25%;
-}
-.chart-js.animate-external svg .circle--external-background, .chart-js.animate-external svg .circle--external-percentatge {
-  animation: chart-offset 3s ease-in-out forwards;
-  animation-delay: 0.5s;
-}
-.chart-js.animate-external percentatge--external::after {
-  animation: chart-js-external 3s steps(80) forwards;
-  animation-delay: 0.5s;
-}
-.chart-js.animate-external percentatge--internal::after {
-  animation: chart-js-internal 3s steps(20) forwards;
-  animation-delay: 0.5s;
-}
-.chart-js.animate-internal svg .circle--internal-background, .chart-js.animate-internal svg .circle--internal-percentatge {
-  animation: chart-offset 3s ease-in-out forwards;
-  animation-delay: 0.5s;
-}
-.chart-js svg {
-  width: 100%;
-  height: 100%;
-}
-.chart-js svg .circle--external-background, .chart-js svg .circle--external-percentatge {
-  r: 95px;
-  cx: 50%;
-  cy: 50%;
-  fill: none;
-  stroke: #6C5B7B;
-  stroke-width: 10px;
-}
-.chart-js svg .circle--external-percentatge {
-  stroke: #8da842;
-  stroke-dasharray: 477.28px 596.6px;
-  stroke-dashoffset: 477.28px;
-  stroke-linecap: round;
-  transform-origin: 50% 50%;
-  transform: rotate(-90deg);
-}
-.chart-js svg .circle--internal-background, .chart-js svg .circle--internal-percentatge {
-  r: 90px;
-  cx: 50%;
-  cy: 50%;
-  fill: none;
-  stroke: #F67280;
-  stroke-width: 7px;
-}
-.chart-js svg .circle--internal-percentatge {
-  stroke: #a85163;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
-  stroke-linecap: round;
-  transform-origin: 50% 50%;
-  transform: rotate(-90deg);
-}
-.chart-js percentatge--external {
-  display: inline-block;
-  width: 100%;
-  height: 2.5rem;
-  overflow: hidden;
-  text-align: center;
-  color: #8da842;
-  position: absolute;
-  top: calc(40% - 1.25rem);
-  left: 0;
-  font-size: 0;
-}
-.chart-js percentatge--external::after {
-  display: inline-block;
-  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
-  white-space: pre;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-}
-.chart-js percentatge--internal {
-  display: inline-block;
-  width: 100%;
-  height: 2.5rem;
-  overflow: hidden;
-  text-align: center;
-  color: #a85163;
-  position: absolute;
-  top: calc(60% - 1.25rem);
-  left: 0;
-  font-size: 0;
-}
-.chart-js percentatge--internal::after {
-  display: inline-block;
-  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
-  white-space: pre;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-}
-.chart-js .percentatge--external-tooltip {
-  visibility: hidden;
-  width: 84px;
-  height: 22px;
-  bottom: 73%;
-  left: 58%;
-  margin-left: -60px;
-  background-color: #6C5B7B;
-  color: #8da842;
-  font-size: 15px;
-  text-align: center;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-}
-.chart-js:hover .percentatge--external-tooltip {
-  visibility: visible;
-}
-.chart-js .percentatge--internal-tooltip {
-  visibility: hidden;
-  width: 84px;
-  height: 22px;
-  top: 73%;
-  left: 58%;
-  margin-left: -60px;
-  background-color: #F67280;
-  color: #a85163;
-  font-size: 15px;
-  text-align: center;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-}
-.chart-js:hover .percentatge--internal-tooltip {
-  visibility: visible;
-}
-
-@keyframes chart-js-external {
-  100% {
-    transform: translateY(-200rem);
-  }
-}
-@keyframes chart-js-internal {
-  100% {
-    transform: translateY(-50rem);
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
