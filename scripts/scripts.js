@@ -8,6 +8,12 @@ $(document).ready(function () {
     });
 });
 
+$("#about-link-title").on('click', function() {
+    $("html, body").animate({
+        scrollTop: $("#about").offset().top
+    }, 1000);
+});
+
 $("#about-link").on('click', function() {
     $("html, body").animate({
         scrollTop: $("#about").offset().top
