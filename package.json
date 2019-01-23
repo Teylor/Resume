@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "sass sass/styles.scss styles/styles.css"
+    "compile:sass": "sass sass/styles.scss styles/styles.css",
+    "removeDS": "rm -r .DS_Store"
   },
   "repository": {
     "type": "git",

@@ -4,8 +4,10 @@ $parentWidth: $parentWidthBase * 100vw
 $parentMaxWidth: 1000px
 $dotWidth: 25px
 $dotWidthSm: 17px
-$active: #2C3E50
-$inactive: #AEB6BF
+/* $active: #2C3E50
+/* $inactive: #AEB6BF
+$active: #C5CC40
+$inactive: #616324
 
 #about 
 	height: 100vh
@@ -14,10 +16,8 @@ $inactive: #AEB6BF
 
 h1
 	text-align: center
-	height: 38px
-	margin: 55px 0
-	span
-		white-space: nowrap
+	margin: 20px 0 250px 0
+	color: white
 .flex-parent
 	display: flex
 	flex-direction: column
@@ -82,6 +82,7 @@ h1
 			visibility: visible
 			position: absolute
 			left: 50%
+			color: white
 		&::after
 			content: attr(data-year)
 			top: 25px
@@ -100,9 +101,11 @@ h1
 	font-size: 22px
 	margin-top: 100px
 	max-width: $parentMaxWidth
+	color: white
 	p
 		margin-top: 0
 		display: none
+		white-space: pre-line
 		&.active
 			display: block
 		
@@ -113,6 +116,11 @@ h1
 	.input::after
 		right: #{-($parentMaxWidth / $numDots) + ($dotWidth / 2)}
 @media (max-width: 850px)
+	h1
+		text-align: center
+		margin: 20px 0 30px 0
+		color: white
+
 	.input
 		width: $dotWidthSm
 		height: $dotWidthSm
