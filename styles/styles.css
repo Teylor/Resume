@@ -2297,6 +2297,1129 @@ h1 {
     transform: translateY(-50rem);
   }
 }
+@media (max-width: 500px) {
+  #headingLanguages {
+    font-size: 12px;
+  }
+
+  #headingBackend {
+    font-size: 12px;
+  }
+
+  #headingFrontend {
+    font-size: 12px;
+  }
+
+  #headingDatabases {
+    font-size: 12px;
+  }
+
+  /* -------CHARTS--------- */
+  .chart-php {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-php.animate-external svg .circle--external-background, .chart-php.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-php.animate-external percentatge--external::after {
+    animation: chart-php-external 3s steps(50) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-php.animate-external percentatge--internal::after {
+    animation: chart-php-internal 3s steps(75) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-php.animate-internal svg .circle--internal-background, .chart-php.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-php svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-php svg .circle--external-background, .chart-php svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-php svg .circle--external-percentatge {
+    stroke: #4fb99f;
+    stroke-dasharray: 141.3px 282.6px;
+    stroke-dashoffset: 141.3px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-php svg .circle--internal-background, .chart-php svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-php svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 188.4px 251.2px;
+    stroke-dashoffset: 188.4px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-php percentatge--external {
+    display: none;
+  }
+  .chart-php percentatge--internal {
+    display: none;
+  }
+  .chart-php .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-php .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-php-external {
+    100% {
+      transform: translateY(-125rem);
+    }
+  }
+  @keyframes chart-php-internal {
+    100% {
+      transform: translateY(-187.5rem);
+    }
+  }
+  .chart-js {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-js.animate-external svg .circle--external-background, .chart-js.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-js.animate-external percentatge--external::after {
+    animation: chart-js-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-js.animate-external percentatge--internal::after {
+    animation: chart-js-internal 3s steps(20) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-js.animate-internal svg .circle--internal-background, .chart-js.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-js svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-js svg .circle--external-background, .chart-js svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-js svg .circle--external-percentatge {
+    stroke: #4fb99f;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-js svg .circle--internal-background, .chart-js svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-js svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 50.24px 251.2px;
+    stroke-dashoffset: 50.24px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-js percentatge--external {
+    display: none;
+  }
+  .chart-js percentatge--internal {
+    display: none;
+  }
+  .chart-js .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-js .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-js-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-js-internal {
+    100% {
+      transform: translateY(-50rem);
+    }
+  }
+  .chart-csharp {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-csharp.animate-external svg .circle--external-background, .chart-csharp.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-csharp.animate-external percentatge--external::after {
+    animation: chart-csharp-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-csharp.animate-external percentatge--internal::after {
+    animation: chart-csharp-internal 3s steps(20) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-csharp.animate-internal svg .circle--internal-background, .chart-csharp.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-csharp svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-csharp svg .circle--external-background, .chart-csharp svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-csharp svg .circle--external-percentatge {
+    stroke: #4fb99f;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-csharp svg .circle--internal-background, .chart-csharp svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-csharp svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 50.24px 251.2px;
+    stroke-dashoffset: 50.24px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-csharp percentatge--external {
+    display: none;
+  }
+  .chart-csharp percentatge--internal {
+    display: none;
+  }
+  .chart-csharp .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-csharp .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-csharp-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-csharp-internal {
+    100% {
+      transform: translateY(-50rem);
+    }
+  }
+  .chart-java {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-java.animate-external svg .circle--external-background, .chart-java.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-java.animate-external percentatge--external::after {
+    animation: chart-java-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-java.animate-external percentatge--internal::after {
+    animation: chart-java-internal 3s steps(20) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-java.animate-internal svg .circle--internal-background, .chart-java.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-java svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-java svg .circle--external-background, .chart-java svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-java svg .circle--external-percentatge {
+    stroke: #4fb99f;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-java svg .circle--internal-background, .chart-java svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-java svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 50.24px 251.2px;
+    stroke-dashoffset: 50.24px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-java percentatge--external {
+    display: none;
+  }
+  .chart-java percentatge--internal {
+    display: none;
+  }
+  .chart-java .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-java .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-java-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-java-internal {
+    100% {
+      transform: translateY(-50rem);
+    }
+  }
+  .chart-nodejs {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-nodejs.animate-external svg .circle--external-background, .chart-nodejs.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-nodejs.animate-external percentatge--external::after {
+    animation: chart-nodejs-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-nodejs.animate-external percentatge--internal::after {
+    animation: chart-nodejs-internal 3s steps(20) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-nodejs.animate-internal svg .circle--internal-background, .chart-nodejs.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-nodejs svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-nodejs svg .circle--external-background, .chart-nodejs svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-nodejs svg .circle--external-percentatge {
+    stroke: #4fb963;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-nodejs svg .circle--internal-background, .chart-nodejs svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-nodejs svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 50.24px 251.2px;
+    stroke-dashoffset: 50.24px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-nodejs percentatge--external {
+    display: none;
+  }
+  .chart-nodejs percentatge--internal {
+    display: none;
+  }
+  .chart-nodejs .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-nodejs .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-nodejs-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-nodejs-internal {
+    100% {
+      transform: translateY(-50rem);
+    }
+  }
+  .chart-fire {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-fire.animate-external svg .circle--external-background, .chart-fire.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-fire.animate-external percentatge--external::after {
+    animation: chart-fire-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-fire.animate-external percentatge--internal::after {
+    animation: chart-fire-internal 3s steps(20) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-fire.animate-internal svg .circle--internal-background, .chart-fire.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-fire svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-fire svg .circle--external-background, .chart-fire svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-fire svg .circle--external-percentatge {
+    stroke: #4fb963;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-fire svg .circle--internal-background, .chart-fire svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-fire svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 50.24px 251.2px;
+    stroke-dashoffset: 50.24px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-fire percentatge--external {
+    display: none;
+  }
+  .chart-fire percentatge--internal {
+    display: none;
+  }
+  .chart-fire .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-fire .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-fire-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-fire-internal {
+    100% {
+      transform: translateY(-50rem);
+    }
+  }
+  .chart-css {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-css.animate-external svg .circle--external-background, .chart-css.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-css.animate-external percentatge--external::after {
+    animation: chart-css-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-css.animate-external percentatge--internal::after {
+    animation: chart-css-internal 3s steps(20) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-css.animate-internal svg .circle--internal-background, .chart-css.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-css svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-css svg .circle--external-background, .chart-css svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-css svg .circle--external-percentatge {
+    stroke: #c283ad;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-css svg .circle--internal-background, .chart-css svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-css svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 50.24px 251.2px;
+    stroke-dashoffset: 50.24px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-css percentatge--external {
+    display: none;
+  }
+  .chart-css percentatge--internal {
+    display: none;
+  }
+  .chart-css .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-css .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-css-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-css-internal {
+    100% {
+      transform: translateY(-50rem);
+    }
+  }
+  .chart-sass {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-sass.animate-external svg .circle--external-background, .chart-sass.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-sass.animate-external percentatge--external::after {
+    animation: chart-sass-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-sass.animate-external percentatge--internal::after {
+    animation: chart-sass-internal 3s steps(20) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-sass.animate-internal svg .circle--internal-background, .chart-sass.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-sass svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-sass svg .circle--external-background, .chart-sass svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-sass svg .circle--external-percentatge {
+    stroke: #c283ad;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-sass svg .circle--internal-background, .chart-sass svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-sass svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 50.24px 251.2px;
+    stroke-dashoffset: 50.24px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-sass percentatge--external {
+    display: none;
+  }
+  .chart-sass percentatge--internal {
+    display: none;
+  }
+  .chart-sass .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-sass .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-sass-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-sass-internal {
+    100% {
+      transform: translateY(-50rem);
+    }
+  }
+  .chart-react {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-react.animate-external svg .circle--external-background, .chart-react.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-react.animate-external percentatge--external::after {
+    animation: chart-react-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-react.animate-external percentatge--internal::after {
+    animation: chart-react-internal 3s steps(20) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-react.animate-internal svg .circle--internal-background, .chart-react.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-react svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-react svg .circle--external-background, .chart-react svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-react svg .circle--external-percentatge {
+    stroke: #c283ad;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-react svg .circle--internal-background, .chart-react svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-react svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 50.24px 251.2px;
+    stroke-dashoffset: 50.24px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-react percentatge--external {
+    display: none;
+  }
+  .chart-react percentatge--internal {
+    display: none;
+  }
+  .chart-react .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-react .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-react-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-react-internal {
+    100% {
+      transform: translateY(-50rem);
+    }
+  }
+  .chart-angular {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-angular.animate-external svg .circle--external-background, .chart-angular.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-angular.animate-external percentatge--external::after {
+    animation: chart-angular-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-angular.animate-external percentatge--internal::after {
+    animation: chart-angular-internal 3s steps(20) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-angular.animate-internal svg .circle--internal-background, .chart-angular.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-angular svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-angular svg .circle--external-background, .chart-angular svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-angular svg .circle--external-percentatge {
+    stroke: #c283ad;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-angular svg .circle--internal-background, .chart-angular svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-angular svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 50.24px 251.2px;
+    stroke-dashoffset: 50.24px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-angular percentatge--external {
+    display: none;
+  }
+  .chart-angular percentatge--internal {
+    display: none;
+  }
+  .chart-angular .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-angular .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-angular-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-angular-internal {
+    100% {
+      transform: translateY(-50rem);
+    }
+  }
+  .chart-sql {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-sql.animate-external svg .circle--external-background, .chart-sql.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-sql.animate-external percentatge--external::after {
+    animation: chart-sql-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-sql.animate-external percentatge--internal::after {
+    animation: chart-sql-internal 3s steps(20) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-sql.animate-internal svg .circle--internal-background, .chart-sql.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-sql svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-sql svg .circle--external-background, .chart-sql svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-sql svg .circle--external-percentatge {
+    stroke: #de4dec;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-sql svg .circle--internal-background, .chart-sql svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-sql svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 50.24px 251.2px;
+    stroke-dashoffset: 50.24px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-sql percentatge--external {
+    display: none;
+  }
+  .chart-sql percentatge--internal {
+    display: none;
+  }
+  .chart-sql .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-sql .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-sql-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-sql-internal {
+    100% {
+      transform: translateY(-50rem);
+    }
+  }
+  .chart-mongo {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-mongo.animate-external svg .circle--external-background, .chart-mongo.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-mongo.animate-external percentatge--external::after {
+    animation: chart-mongo-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-mongo.animate-external percentatge--internal::after {
+    animation: chart-mongo-internal 3s steps(20) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-mongo.animate-internal svg .circle--internal-background, .chart-mongo.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-mongo svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-mongo svg .circle--external-background, .chart-mongo svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-mongo svg .circle--external-percentatge {
+    stroke: #de4dec;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-mongo svg .circle--internal-background, .chart-mongo svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-mongo svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 50.24px 251.2px;
+    stroke-dashoffset: 50.24px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-mongo percentatge--external {
+    display: none;
+  }
+  .chart-mongo percentatge--internal {
+    display: none;
+  }
+  .chart-mongo .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-mongo .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-mongo-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-mongo-internal {
+    100% {
+      transform: translateY(-50rem);
+    }
+  }
+}
 section#experience {
   height: 100vh;
   padding-top: 40px;

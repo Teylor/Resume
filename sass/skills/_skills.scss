@@ -68,21 +68,18 @@
   }
 }
 .skills--backend {
-  
   .nodejs-title {
     font-family: "Josefin Sans", sans-serif;
     color: #112f41;
   }
 }
 .skills--frontend {
-  
   .nodejs-title {
     font-family: "Josefin Sans", sans-serif;
     color: #112f41;
   }
 }
 .skills--database {
-  
   .nodejs-title {
     font-family: "Josefin Sans", sans-serif;
     color: #112f41;
@@ -438,6 +435,331 @@ $labelData: "";
         map-get($param, labelFontSize) *
           (-(map-get($param, internalPercentage)))
       );
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  #headingLanguages {
+    font-size: 12px;
+  }
+
+  #headingBackend {
+    font-size: 12px;
+  }
+  #headingFrontend {
+    font-size: 12px;
+  }
+
+  #headingDatabases {
+    font-size: 12px;
+  }
+
+ /* -------CHARTS--------- */
+$configs: (
+  chart-php: (
+    svgSize: 100px,
+    externalPercentage: 50,
+    internalPercentage: 75,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb99f,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-js: (
+    svgSize: 100px,
+    externalPercentage: 80,
+    internalPercentage: 20,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb99f,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-csharp: (
+    svgSize: 100px,
+    externalPercentage: 80,
+    internalPercentage: 20,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb99f,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-java: (
+    svgSize: 100px,
+    externalPercentage: 80,
+    internalPercentage: 20,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb99f,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-nodejs: (
+    svgSize: 100px,
+    externalPercentage: 80,
+    internalPercentage: 20,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb963,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-fire: (
+    svgSize: 100px,
+    externalPercentage: 80,
+    internalPercentage: 20,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb963,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-css: (
+    svgSize: 100px,
+    externalPercentage: 80,
+    internalPercentage: 20,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #c283ad,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-sass: (
+    svgSize: 100px,
+    externalPercentage: 80,
+    internalPercentage: 20,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #c283ad,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-react: (
+    svgSize: 100px,
+    externalPercentage: 80,
+    internalPercentage: 20,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #c283ad,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-angular: (
+    svgSize: 100px,
+    externalPercentage: 80,
+    internalPercentage: 20,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #c283ad,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-sql: (
+    svgSize: 100px,
+    externalPercentage: 80,
+    internalPercentage: 20,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #de4dec,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-mongo: (
+    svgSize: 100px,
+    externalPercentage: 80,
+    internalPercentage: 20,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #de4dec,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  )
+);
+
+  $pi: 3.14;
+  $labelData: "";
+  @for $i from 0 to 101 {
+    $labelData: $labelData + $i + "%" + "\a";
+  }
+
+  @each $chart, $param in $configs {
+    $s: (map-get($param, svgSize) - map-get($param, externalWidth)) * $pi;
+    $e: (map-get($param, svgSize) - map-get($param, internalWidth)) * $pi;
+    $sOffSet: (map-get($param, externalPercentage) / 100) * $s;
+    $eOffSet: (map-get($param, internalPercentage) / 100) * $e;
+
+    .#{$chart} {
+      width: map-get($param, svgSize);
+      height: map-get($param, svgSize);
+      margin: 0;
+      position: relative;
+      left: 25%;
+
+      &.animate-external {
+        svg .circle--external-background {
+          animation: chart-offset
+            map-get($param, duration)
+            ease-in-out
+            forwards;
+          animation-delay: map-get($param, animationDelay);
+        }
+        percentatge--external::after {
+          animation: #{$chart}-external
+            map-get($param, duration)
+            steps(map-get($param, externalPercentage))
+            forwards;
+          animation-delay: map-get($param, animationDelay);
+        }
+        percentatge--internal::after {
+          animation: #{$chart}-internal
+            map-get($param, duration)
+            steps(map-get($param, internalPercentage))
+            forwards;
+          animation-delay: map-get($param, animationDelay);
+        }
+      }
+
+      &.animate-internal {
+        svg .circle--internal-background {
+          animation: chart-offset
+            map-get($param, duration)
+            ease-in-out
+            forwards;
+          animation-delay: map-get($param, animationDelay);
+        }
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+        .circle--external-background {
+          r: (map-get($param, svgSize) - map-get($param, externalWidth))/2;
+          cx: 50%;
+          cy: 50%;
+          fill: none;
+          stroke: map-get($param, externalBackgroundColor);
+          stroke-width: map-get($param, externalWidth);
+        }
+        .circle--external-percentatge {
+          @extend .circle--external-background;
+          stroke: map-get($param, externalPercentatgeColor);
+          stroke-dasharray: $sOffSet $s;
+          stroke-dashoffset: $sOffSet;
+          stroke-linecap: round;
+          transform-origin: 50% 50%;
+          transform: rotate(-90deg);
+        }
+        .circle--internal-background {
+          r: (map-get($param, svgSize) - map-get($param, internalWidth))/2;
+          cx: 50%;
+          cy: 50%;
+          fill: none;
+          stroke: map-get($param, internalBackgroundColor);
+          stroke-width: map-get($param, externalWidth) - 3;
+        }
+        .circle--internal-percentatge {
+          @extend .circle--internal-background;
+          stroke: map-get($param, internalPercentatgeColor);
+          stroke-dasharray: $eOffSet $e;
+          stroke-dashoffset: $eOffSet;
+          stroke-linecap: round;
+          transform-origin: 50% 50%;
+          transform: rotate(-90deg);
+        }
+      }
+      percentatge--external {
+        display: none;
+      }
+      percentatge--internal {
+        display: none;
+      }
+
+      .percentatge--external-tooltip {
+        /* visibility: hidden; */
+        margin-left: 55px;
+        z-index: 0;
+      }
+      /* &:hover .percentatge--external-tooltip {
+        visibility: visible;
+      } */
+
+      .percentatge--internal-tooltip {
+        /* visibility: hidden; */
+        margin-left: 55px;
+        z-index: 0;
+      }
+      /* &:hover .percentatge--internal-tooltip {
+        visibility: visible;
+      } */
+    }
+
+    @keyframes #{$chart}-external {
+      100% {
+        transform: translateY(
+          map-get($param, labelFontSize) *
+            (-(map-get($param, externalPercentage)))
+        );
+      }
+    }
+    @keyframes #{$chart}-internal {
+      100% {
+        transform: translateY(
+          map-get($param, labelFontSize) *
+            (-(map-get($param, internalPercentage)))
+        );
+      }
     }
   }
 }
