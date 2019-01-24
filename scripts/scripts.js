@@ -36,15 +36,15 @@ $(document).on('scroll', function () {
     let navbarAbout = $('#about').offset().top;
     let navbarSkills = $('#skills').offset().top;
     let navbarExperience = $('#experience').offset().top;
-    let scrollTop = $(document).scrollTop();
+    let scrollTop = $(document).scrollTop() + 1;
 
     $(".navbar ul li a").removeClass("active");
 
-    if (scrollTop - 1 < navbarAbout)
+    if (scrollTop > 2 && scrollTop < navbarSkills || scrollTop > navbarAbout && scrollTop < navbarSkills)
         $(".navbar ul>li:nth-child(1) a").addClass("active");
-    else if (scrollTop - 1 < navbarSkills)
+    else if (scrollTop > navbarSkills && scrollTop < navbarExperience)
         $(".navbar ul>li:nth-child(2) a").addClass("active");
-    else if (scrollTop - 1 < navbarExperience)
+    else if (scrollTop > navbarExperience)
         $(".navbar ul>li:nth-child(3) a").addClass("active");
 });
 
