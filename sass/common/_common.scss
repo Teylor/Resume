@@ -13,7 +13,7 @@
       rgba(95, 95, 95, 0.2),
       rgba(0, 0, 0, 0.9)
     ),
-    url("../img/header.jpg");
+    url(" https://res.cloudinary.com/dqlsibnbz/image/upload/v1548298117/header.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -91,7 +91,7 @@
   ul li {
     list-style: none;
     display: inline;
-    margin: 150px;
+    margin: 210px;
   }
 
   ul li a {
@@ -256,7 +256,7 @@
 }
 
 .footer {
-  background-color: #ffd882;
+  background-color: $color-black;
   .footer-profile {
     text-align: center;
     padding: 6px;
