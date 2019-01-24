@@ -1,54 +1,66 @@
 #skills {
-  padding-top: 40px;
+  padding: 30px;
   background-color: $color-black;
   position: relative;
 }
 .skills--languages {
   span {
-    color: #4FB99F;
+    color: #4fb99f;
     font-family: "Baloo Thambi", cursive;
     font-size: 30px;
     position: relative;
   }
   .php-title {
     font-family: "Josefin Sans", sans-serif;
-    color: #112F41;
+    color: #112f41;
+  }
+  .js-title {
+    font-family: "Josefin Sans", sans-serif;
+    color: #112f41;
+  }
+  .csharp-title {
+    font-family: "Josefin Sans", sans-serif;
+    color: #112f41;
+  }
+  .java-title {
+    font-family: "Josefin Sans", sans-serif;
+    color: #112f41;
   }
 }
 .skills--backend {
   span {
-    color: #4FB963;
+    color: #4fb963;
     font-family: "Baloo Thambi", cursive;
     font-size: 30px;
     position: relative;
   }
   .nodejs-title {
     font-family: "Josefin Sans", sans-serif;
-    color: #112F41;
+    color: #112f41;
   }
 }
 .skills--frontend {
   span {
-    color: #C283AD;
+    color: #c283ad;
     font-family: "Baloo Thambi", cursive;
     font-size: 30px;
     position: relative;
   }
   .nodejs-title {
     font-family: "Josefin Sans", sans-serif;
-    color: #112F41;
+    color: #112f41;
   }
 }
 .skills--database {
   span {
-    color: #DE4DEC;
+    color: #de4dec;
     font-family: "Baloo Thambi", cursive;
     font-size: 30px;
     position: relative;
   }
   .nodejs-title {
     font-family: "Josefin Sans", sans-serif;
-    color: #112F41;
+    color: #112f41;
   }
 }
 
@@ -60,10 +72,10 @@ $configs: (
     internalPercentage: 75,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #4FB99F,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb99f,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -74,10 +86,10 @@ $configs: (
     internalPercentage: 20,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #4FB99F,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb99f,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -88,10 +100,10 @@ $configs: (
     internalPercentage: 20,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #4FB99F,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb99f,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -102,10 +114,10 @@ $configs: (
     internalPercentage: 20,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #4FB99F,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb99f,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -116,10 +128,10 @@ $configs: (
     internalPercentage: 20,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #4FB963,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb963,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -130,10 +142,10 @@ $configs: (
     internalPercentage: 20,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #4FB963,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb963,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -144,10 +156,10 @@ $configs: (
     internalPercentage: 20,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #C283AD,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #c283ad,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -158,10 +170,10 @@ $configs: (
     internalPercentage: 20,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #C283AD,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #c283ad,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -172,10 +184,10 @@ $configs: (
     internalPercentage: 20,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #C283AD,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #c283ad,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -186,10 +198,10 @@ $configs: (
     internalPercentage: 20,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #C283AD,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #c283ad,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -200,10 +212,10 @@ $configs: (
     internalPercentage: 20,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #DE4DEC,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #de4dec,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -214,10 +226,10 @@ $configs: (
     internalPercentage: 20,
     externalWidth: 10px,
     internalWidth: 20px,
-    externalBackgroundColor: #112F41,
-    externalPercentatgeColor: #DE4DEC,
-    internalBackgroundColor: #F2B134,
-    internalPercentatgeColor: #ED553B,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #de4dec,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
     labelFontSize: 2.5rem,
     duration: 3s,
     animationDelay: 0.5s
@@ -349,7 +361,7 @@ $labelData: "";
     }
 
     .percentatge--external-tooltip {
-      visibility: hidden;
+      /* visibility: hidden; */
       width: 84px;
       height: 22px;
       bottom: 73%;
@@ -363,12 +375,12 @@ $labelData: "";
       position: absolute;
       z-index: 1;
     }
-    &:hover .percentatge--external-tooltip {
+    /* &:hover .percentatge--external-tooltip {
       visibility: visible;
-    }
+    } */
 
     .percentatge--internal-tooltip {
-      visibility: hidden;
+      /* visibility: hidden; */
       width: 84px;
       height: 22px;
       top: 73%;
@@ -382,9 +394,9 @@ $labelData: "";
       position: absolute;
       z-index: 1;
     }
-    &:hover .percentatge--internal-tooltip {
+    /* &:hover .percentatge--internal-tooltip {
       visibility: visible;
-    }
+    } */
   }
 
   @keyframes #{$chart}-external {
