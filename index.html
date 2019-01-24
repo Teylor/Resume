@@ -93,265 +93,296 @@
   </section>
 
   <section id="skills">
-    <div class="container skills--languages">
-      <span>Programming Languages</span>
-      <div class="row">
+    <div id="accordion">
+      <div class="card">
+        <button id="headingLanguages" class="card-header" data-toggle="collapse" data-target="#collapseLanguages"
+          aria-expanded="true" aria-controls="collapseLanguages">
+          Programming Languages
+        </button>
 
-        <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-php">
-          <div class="row php-title">
-            PHP
-          </div>
-          <div class="row php-percentatge">
-            <div class="chart-php animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
-        </div>
+        <div id="collapseLanguages" class="collapse show" aria-labelledby="headingLanguages" data-parent="#accordion">
+            <div class="container skills--languages">
 
-        <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-javascript">
-          <div class="row js-title">
-            JavaScript / TypeScript
-          </div>
-          <div class="row js-percentatge">
-            <div class="chart-js animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-csharp">
-          <div class="row csharp-title">
-            C#
-          </div>
-          <div class="row csharp-percentatge">
-            <div class="chart-csharp animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-java">
-          <div class="row java-title">
-            Java
-          </div>
-          <div class="row java-percentatge">
-            <div class="chart-java animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container skills--backend">
-      <span>Back End</span>
-      <div class="row">
-
-        <div class="col-md-6 skills--languages-nodejs">
-          <div class="row nodejs-title">
-            NodeJs
-          </div>
-          <div class="row nodejs-percentatge">
-            <div class="chart-nodejs animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 skills--languages-firebase">
-          <div class="row fire-title">
-            Firebase
-          </div>
-          <div class="row fire-percentatge">
-            <div class="chart-fire animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
+                <div class="row">
+          
+                  <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-php">
+                    <div class="row php-title">
+                      PHP
+                    </div>
+                    <div class="row php-percentatge">
+                      <div class="chart-php animate-external animate-internal">
+                        <svg>
+                          <circle class="circle--external-background" />
+                          <circle class="circle--external-percentatge" />
+                          <circle class="circle--internal-background" />
+                          <circle class="circle--internal-percentatge" />
+                        </svg>
+                        <percentatge--external></percentatge--external>
+                        <percentatge--internal></percentatge--internal>
+                        <span class="percentatge--external-tooltip">Knowledge</span>
+                        <span class="percentatge--internal-tooltip">Experience</span>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-javascript">
+                    <div class="row js-title">
+                      JavaScript / TypeScript
+                    </div>
+                    <div class="row js-percentatge">
+                      <div class="chart-js animate-external animate-internal">
+                        <svg>
+                          <circle class="circle--external-background" />
+                          <circle class="circle--external-percentatge" />
+                          <circle class="circle--internal-background" />
+                          <circle class="circle--internal-percentatge" />
+                        </svg>
+                        <percentatge--external></percentatge--external>
+                        <percentatge--internal></percentatge--internal>
+                        <span class="percentatge--external-tooltip">Knowledge</span>
+                        <span class="percentatge--internal-tooltip">Experience</span>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-csharp">
+                    <div class="row csharp-title">
+                      C#
+                    </div>
+                    <div class="row csharp-percentatge">
+                      <div class="chart-csharp animate-external animate-internal">
+                        <svg>
+                          <circle class="circle--external-background" />
+                          <circle class="circle--external-percentatge" />
+                          <circle class="circle--internal-background" />
+                          <circle class="circle--internal-percentatge" />
+                        </svg>
+                        <percentatge--external></percentatge--external>
+                        <percentatge--internal></percentatge--internal>
+                        <span class="percentatge--external-tooltip">Knowledge</span>
+                        <span class="percentatge--internal-tooltip">Experience</span>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-java">
+                    <div class="row java-title">
+                      Java
+                    </div>
+                    <div class="row java-percentatge">
+                      <div class="chart-java animate-external animate-internal">
+                        <svg>
+                          <circle class="circle--external-background" />
+                          <circle class="circle--external-percentatge" />
+                          <circle class="circle--internal-background" />
+                          <circle class="circle--internal-percentatge" />
+                        </svg>
+                        <percentatge--external></percentatge--external>
+                        <percentatge--internal></percentatge--internal>
+                        <span class="percentatge--external-tooltip">Knowledge</span>
+                        <span class="percentatge--internal-tooltip">Experience</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
-    </div>
-    <div class="container skills--frontend">
-      <span>Front End</span>
-      <div class="row">
-
-        <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-css">
-          <div class="row css-title">
-            HTML/CSS
-          </div>
-          <div class="row css-percentatge">
-            <div class="chart-css animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-sass">
-          <div class="row sass-title">
-            Less/Sass
-          </div>
-          <div class="row sass-percentatge">
-            <div class="chart-sass animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-react">
-          <div class="row react-title">
-            React
-          </div>
-          <div class="row react-percentatge">
-            <div class="chart-react animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-angular">
-          <div class="row angular-title">
-            Angular
-          </div>
-          <div class="row angular-percentatge">
-            <div class="chart-angular animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
+      <div class="card">
+        <button id="headingBackend" class="card-header btn btn-link collapsed" data-toggle="collapse" data-target="#collapseBackend"
+          aria-expanded="false" aria-controls="collapseBackend">
+          Back End
+        </button>
+        <div id="collapseBackend" class="collapse" aria-labelledby="headingBackend" data-parent="#accordion">
+            <div class="container skills--backend">
+                <div class="row">
+          
+                  <div class="col-md-6 skills--languages-nodejs">
+                    <div class="row nodejs-title">
+                      NodeJs
+                    </div>
+                    <div class="row nodejs-percentatge">
+                      <div class="chart-nodejs animate-external animate-internal">
+                        <svg>
+                          <circle class="circle--external-background" />
+                          <circle class="circle--external-percentatge" />
+                          <circle class="circle--internal-background" />
+                          <circle class="circle--internal-percentatge" />
+                        </svg>
+                        <percentatge--external></percentatge--external>
+                        <percentatge--internal></percentatge--internal>
+                        <span class="percentatge--external-tooltip">Knowledge</span>
+                        <span class="percentatge--internal-tooltip">Experience</span>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-6 skills--languages-firebase">
+                    <div class="row fire-title">
+                      Firebase
+                    </div>
+                    <div class="row fire-percentatge">
+                      <div class="chart-fire animate-external animate-internal">
+                        <svg>
+                          <circle class="circle--external-background" />
+                          <circle class="circle--external-percentatge" />
+                          <circle class="circle--internal-background" />
+                          <circle class="circle--internal-percentatge" />
+                        </svg>
+                        <percentatge--external></percentatge--external>
+                        <percentatge--internal></percentatge--internal>
+                        <span class="percentatge--external-tooltip">Knowledge</span>
+                        <span class="percentatge--internal-tooltip">Experience</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
-    </div>
-    <div class="container skills--database">
-      <span>Database</span>
-      <div class="row">
-
-        <div class="col-md-6 skills--languages-sql">
-          <div class="row sql-title">
-            SQL
-          </div>
-          <div class="row sql-percentatge">
-            <div class="chart-sql animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 skills--languages-mongo">
-          <div class="row mongo-title">
-            Mongo
-          </div>
-          <div class="row mongo-percentatge">
-            <div class="chart-mongo animate-external animate-internal">
-              <svg>
-                <circle class="circle--external-background" />
-                <circle class="circle--external-percentatge" />
-                <circle class="circle--internal-background" />
-                <circle class="circle--internal-percentatge" />
-              </svg>
-              <percentatge--external></percentatge--external>
-              <percentatge--internal></percentatge--internal>
-              <span class="percentatge--external-tooltip">Knowledge</span>
-              <span class="percentatge--internal-tooltip">Experience</span>
-            </div>
-          </div>
+      <div class="card">
+        <button id="headingFrontend" class="card-header btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFrontEnd"
+          aria-expanded="false" aria-controls="collapseFrontEnd">
+          Front End
+        </button>
+        <div id="collapseFrontEnd" class="collapse" aria-labelledby="headingFrontEnd" data-parent="#accordion">
+            <div class="container skills--frontend">
+                <div class="row">
+          
+                  <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-css">
+                    <div class="row css-title">
+                      HTML/CSS
+                    </div>
+                    <div class="row css-percentatge">
+                      <div class="chart-css animate-external animate-internal">
+                        <svg>
+                          <circle class="circle--external-background" />
+                          <circle class="circle--external-percentatge" />
+                          <circle class="circle--internal-background" />
+                          <circle class="circle--internal-percentatge" />
+                        </svg>
+                        <percentatge--external></percentatge--external>
+                        <percentatge--internal></percentatge--internal>
+                        <span class="percentatge--external-tooltip">Knowledge</span>
+                        <span class="percentatge--internal-tooltip">Experience</span>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-sass">
+                    <div class="row sass-title">
+                      Less/Sass
+                    </div>
+                    <div class="row sass-percentatge">
+                      <div class="chart-sass animate-external animate-internal">
+                        <svg>
+                          <circle class="circle--external-background" />
+                          <circle class="circle--external-percentatge" />
+                          <circle class="circle--internal-background" />
+                          <circle class="circle--internal-percentatge" />
+                        </svg>
+                        <percentatge--external></percentatge--external>
+                        <percentatge--internal></percentatge--internal>
+                        <span class="percentatge--external-tooltip">Knowledge</span>
+                        <span class="percentatge--internal-tooltip">Experience</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-react">
+                    <div class="row react-title">
+                      React
+                    </div>
+                    <div class="row react-percentatge">
+                      <div class="chart-react animate-external animate-internal">
+                        <svg>
+                          <circle class="circle--external-background" />
+                          <circle class="circle--external-percentatge" />
+                          <circle class="circle--internal-background" />
+                          <circle class="circle--internal-percentatge" />
+                        </svg>
+                        <percentatge--external></percentatge--external>
+                        <percentatge--internal></percentatge--internal>
+                        <span class="percentatge--external-tooltip">Knowledge</span>
+                        <span class="percentatge--internal-tooltip">Experience</span>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-sm-12 col-md-6 col-xl-3 skills--languages-angular">
+                    <div class="row angular-title">
+                      Angular
+                    </div>
+                    <div class="row angular-percentatge">
+                      <div class="chart-angular animate-external animate-internal">
+                        <svg>
+                          <circle class="circle--external-background" />
+                          <circle class="circle--external-percentatge" />
+                          <circle class="circle--internal-background" />
+                          <circle class="circle--internal-percentatge" />
+                        </svg>
+                        <percentatge--external></percentatge--external>
+                        <percentatge--internal></percentatge--internal>
+                        <span class="percentatge--external-tooltip">Knowledge</span>
+                        <span class="percentatge--internal-tooltip">Experience</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
+      <div class="card">
+          <button id="headingDatabases" class="card-header btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDatabases"
+            aria-expanded="false" aria-controls="collapseDatabases">
+            DataBases
+          </button>
+          <div id="collapseDatabases" class="collapse" aria-labelledby="headingDatabases" data-parent="#accordion">
+              <div class="container skills--database">
+                  <div class="row">
+            
+                    <div class="col-md-6 skills--languages-sql">
+                      <div class="row sql-title">
+                        SQL
+                      </div>
+                      <div class="row sql-percentatge">
+                        <div class="chart-sql animate-external animate-internal">
+                          <svg>
+                            <circle class="circle--external-background" />
+                            <circle class="circle--external-percentatge" />
+                            <circle class="circle--internal-background" />
+                            <circle class="circle--internal-percentatge" />
+                          </svg>
+                          <percentatge--external></percentatge--external>
+                          <percentatge--internal></percentatge--internal>
+                          <span class="percentatge--external-tooltip">Knowledge</span>
+                          <span class="percentatge--internal-tooltip">Experience</span>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="col-md-6 skills--languages-mongo">
+                      <div class="row mongo-title">
+                        Mongo
+                      </div>
+                      <div class="row mongo-percentatge">
+                        <div class="chart-mongo animate-external animate-internal">
+                          <svg>
+                            <circle class="circle--external-background" />
+                            <circle class="circle--external-percentatge" />
+                            <circle class="circle--internal-background" />
+                            <circle class="circle--internal-percentatge" />
+                          </svg>
+                          <percentatge--external></percentatge--external>
+                          <percentatge--internal></percentatge--internal>
+                          <span class="percentatge--external-tooltip">Knowledge</span>
+                          <span class="percentatge--internal-tooltip">Experience</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
     </div>
   </section>
 
@@ -431,8 +462,10 @@
         <i class="fab fa-github"></i></a>
       <a href="https://codepen.io/Teylor6/" target="_blank" data-toggle="tooltip" data-placement="top" title="CodePen">
         <i class="fab fa-codepen"></i></a>
-      <a href="https://res.cloudinary.com/dqlsibnbz/image/upload/v1548316428/CV_EN.pdf" download data-toggle="tooltip" data-placement="top" title="English Resume" target="_blank"><i class="far fa-file-pdf"></i></a>
-      <a href="https://res.cloudinary.com/dqlsibnbz/image/upload/v1548316433/CV_ES.pdf" download data-toggle="tooltip" data-placement="top" title="Spanish Resume" target="_blank"><i class="far fa-file-pdf"></i></a>
+      <a href="https://res.cloudinary.com/dqlsibnbz/image/upload/v1548316428/CV_EN.pdf" download data-toggle="tooltip"
+        data-placement="top" title="English Resume" target="_blank"><i class="far fa-file-pdf"></i></a>
+      <a href="https://res.cloudinary.com/dqlsibnbz/image/upload/v1548316433/CV_ES.pdf" download data-toggle="tooltip"
+        data-placement="top" title="Spanish Resume" target="_blank"><i class="far fa-file-pdf"></i></a>
     </div>
   </div>
 </body>

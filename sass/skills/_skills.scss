@@ -1,15 +1,55 @@
 #skills {
+  height: 95vh;
   padding: 30px;
   background-color: $color-black;
   position: relative;
 }
+
+#headingLanguages {
+  color: #4fb99f;
+  font-family: "Baloo Thambi", cursive;
+  font-size: 30px;
+  position: relative;
+}
+
+#collapseLanguages {
+  background-color: $color-black;
+}
+
+#headingBackend {
+  color: #4fb963;
+  font-family: "Baloo Thambi", cursive;
+  font-size: 30px;
+  position: relative;
+}
+
+#collapseBackend {
+  background-color: $color-black;
+}
+
+#headingFrontend {
+  color: #c283ad;
+  font-family: "Baloo Thambi", cursive;
+  font-size: 30px;
+  position: relative;
+}
+
+#collapseFrontEnd {
+  background-color: $color-black;
+}
+
+#headingDatabases {
+  color: #de4dec;
+  font-family: "Baloo Thambi", cursive;
+  font-size: 30px;
+  position: relative;
+}
+
+#collapseDatabases {
+  background-color: $color-black;
+}
+
 .skills--languages {
-  span {
-    color: #4fb99f;
-    font-family: "Baloo Thambi", cursive;
-    font-size: 30px;
-    position: relative;
-  }
   .php-title {
     font-family: "Josefin Sans", sans-serif;
     color: #112f41;
@@ -28,36 +68,21 @@
   }
 }
 .skills--backend {
-  span {
-    color: #4fb963;
-    font-family: "Baloo Thambi", cursive;
-    font-size: 30px;
-    position: relative;
-  }
+  
   .nodejs-title {
     font-family: "Josefin Sans", sans-serif;
     color: #112f41;
   }
 }
 .skills--frontend {
-  span {
-    color: #c283ad;
-    font-family: "Baloo Thambi", cursive;
-    font-size: 30px;
-    position: relative;
-  }
+  
   .nodejs-title {
     font-family: "Josefin Sans", sans-serif;
     color: #112f41;
   }
 }
 .skills--database {
-  span {
-    color: #de4dec;
-    font-family: "Baloo Thambi", cursive;
-    font-size: 30px;
-    position: relative;
-  }
+  
   .nodejs-title {
     font-family: "Josefin Sans", sans-serif;
     color: #112f41;

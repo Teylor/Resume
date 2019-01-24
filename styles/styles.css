@@ -486,17 +486,56 @@ h1 {
   }
 }
 #skills {
+  height: 95vh;
   padding: 30px;
   background-color: #ffd882;
   position: relative;
 }
 
-.skills--languages span {
+#headingLanguages {
   color: #4fb99f;
   font-family: "Baloo Thambi", cursive;
   font-size: 30px;
   position: relative;
 }
+
+#collapseLanguages {
+  background-color: #ffd882;
+}
+
+#headingBackend {
+  color: #4fb963;
+  font-family: "Baloo Thambi", cursive;
+  font-size: 30px;
+  position: relative;
+}
+
+#collapseBackend {
+  background-color: #ffd882;
+}
+
+#headingFrontend {
+  color: #c283ad;
+  font-family: "Baloo Thambi", cursive;
+  font-size: 30px;
+  position: relative;
+}
+
+#collapseFrontEnd {
+  background-color: #ffd882;
+}
+
+#headingDatabases {
+  color: #de4dec;
+  font-family: "Baloo Thambi", cursive;
+  font-size: 30px;
+  position: relative;
+}
+
+#collapseDatabases {
+  background-color: #ffd882;
+}
+
 .skills--languages .php-title {
   font-family: "Josefin Sans", sans-serif;
   color: #112f41;
@@ -514,34 +553,16 @@ h1 {
   color: #112f41;
 }
 
-.skills--backend span {
-  color: #4fb963;
-  font-family: "Baloo Thambi", cursive;
-  font-size: 30px;
-  position: relative;
-}
 .skills--backend .nodejs-title {
   font-family: "Josefin Sans", sans-serif;
   color: #112f41;
 }
 
-.skills--frontend span {
-  color: #c283ad;
-  font-family: "Baloo Thambi", cursive;
-  font-size: 30px;
-  position: relative;
-}
 .skills--frontend .nodejs-title {
   font-family: "Josefin Sans", sans-serif;
   color: #112f41;
 }
 
-.skills--database span {
-  color: #de4dec;
-  font-family: "Baloo Thambi", cursive;
-  font-size: 30px;
-  position: relative;
-}
 .skills--database .nodejs-title {
   font-family: "Josefin Sans", sans-serif;
   color: #112f41;

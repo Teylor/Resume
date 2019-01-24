@@ -5,6 +5,7 @@
 
 - Skills
 * Add skills
+* Divs by type - animation on activation
 
 - Experience
 * Add work experience
