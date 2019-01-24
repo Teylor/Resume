@@ -17,7 +17,7 @@ section#experience:before {
 }
 section#experience article {
   width: 100%;
-  height: 33%;
+  height: 20%;
   position: relative;
 }
 section#experience article:after {
@@ -110,7 +110,7 @@ section#experience article:nth-child(3) div.inner h2 {
 section#experience article:nth-child(3) div.inner h2:after {
   background: #e67e22;
 }
-/* section#experience article:nth-child(4) div.inner h2 {
+section#experience article:nth-child(4) div.inner h2 {
   background: #1abc9c;
 }
 section#experience article:nth-child(4) div.inner h2:after {
@@ -121,7 +121,7 @@ section#experience article:nth-child(5) div.inner h2 {
 }
 section#experience article:nth-child(5) div.inner h2:after {
   background: #9b59b6;
-} */
+}
 
 @media (max-width: 1024px) {
   section#experience:before {
