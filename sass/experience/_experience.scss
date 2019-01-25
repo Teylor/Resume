@@ -17,7 +17,7 @@ section#experience:before {
 }
 section#experience article {
   width: 100%;
-  height: 20%;
+  height: 25%;
   position: relative;
 }
 section#experience article:after {
@@ -85,6 +85,7 @@ section#experience article div.inner p {
   background: #fff;
   color: #656565;
   border-radius: 0 0 6px 6px;
+  font-family: "Nunito", sans-serif;
 }
 section#experience article:nth-child(2n + 2) div.inner {
   float: right;
@@ -116,12 +117,12 @@ section#experience article:nth-child(4) div.inner h2 {
 section#experience article:nth-child(4) div.inner h2:after {
   background: #1abc9c;
 }
-section#experience article:nth-child(5) div.inner h2 {
+/* section#experience article:nth-child(5) div.inner h2 {
   background: #9b59b6;
 }
 section#experience article:nth-child(5) div.inner h2:after {
   background: #9b59b6;
-}
+} */
 
 @media (max-width: 1024px) {
   section#experience:before {

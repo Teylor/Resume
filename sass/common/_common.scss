@@ -10,6 +10,10 @@ body {
   background-color: $color-black;
 }
 
+.jump {
+  white-space: pre-line;
+}
+
 .header {
   height: 95vh;
   background-image: linear-gradient(

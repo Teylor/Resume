@@ -45,6 +45,12 @@
     <div class="flex-parent">
       <div class="input-flex-container">
         <div class="input active">
+          <span data-year="1991" data-info="Born"></span>
+        </div>
+        <div class="input">
+          <span data-year="1994" data-info="Growth"></span>
+        </div>
+        <div class="input">
           <span data-year="2003" data-info="Primary School"></span>
         </div>
         <div class="input">
@@ -54,10 +60,7 @@
           <span data-year="2015" data-info="Degree"></span>
         </div>
         <div class="input">
-          <span data-year="2016" data-info="Talentier"></span>
-        </div>
-        <div class="input">
-          <span data-year="2018" data-info="Logitravel"></span>
+          <span data-year="2015" data-info="Companies"></span>
         </div>
         <div class="input">
           <span data-year="Present" data-info="Freelancer"></span>
@@ -65,6 +68,12 @@
       </div>
       <div class="description-flex-container">
         <p class="active">
+          22 Feb 1991
+          Born in Barcelona</p>
+        <p>
+          1994
+          Moved to Mallorca</p>
+        <p>
           2003-2007
           Primary School
           Lluís Vives School - Palma de Mallorca</p>
@@ -77,13 +86,9 @@
           Computer Engineer Degree
           FIB UPC - Barcelona</p>
         <p>
-          2015-2016
-          Full Stack Developer
-          Talentier - Barcelona</p>
-        <p>
-          2016-2018
-          Back End Developer
-          Logitravel - Palma de Mallorca</p>
+          2015-2018
+          Working in Companies
+          Palma de Mallorca / Barcelona</p>
         <p>
           2018-Present
           Freelancer
@@ -197,7 +202,7 @@
           <div class="container skills--backend">
             <div class="row">
 
-              <div class="col-md-6 skills--languages-nodejs">
+              <div class="col-sm-12 col-md-6 col-xl-4 skills--languages-nodejs">
                 <div class="row nodejs-title">
                   NodeJs
                 </div>
@@ -217,7 +222,27 @@
                 </div>
               </div>
 
-              <div class="col-md-6 skills--languages-firebase">
+              <div class="col-sm-12 col-md-6 col-xl-4 skills--languages-drupal">
+                <div class="row drupal-title">
+                  Drupal
+                </div>
+                <div class="row drupal-percentatge">
+                  <div class="chart-drupal animate-external animate-internal">
+                    <svg>
+                      <circle class="circle--external-background" />
+                      <circle class="circle--external-percentatge" />
+                      <circle class="circle--internal-background" />
+                      <circle class="circle--internal-percentatge" />
+                    </svg>
+                    <percentatge--external></percentatge--external>
+                    <percentatge--internal></percentatge--internal>
+                    <span class="percentatge--external-tooltip">Knowledge</span>
+                    <span class="percentatge--internal-tooltip">Experience</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-xl-4 skills--languages-firebase">
                 <div class="row fire-title">
                   Firebase
                 </div>
@@ -340,7 +365,7 @@
           <div class="container skills--database">
             <div class="row">
 
-              <div class="col-md-6 skills--languages-sql">
+              <div class="col-sm-12 col-md-6 skills--languages-sql">
                 <div class="row sql-title">
                   SQL
                 </div>
@@ -360,7 +385,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6 skills--languages-mongo">
+              <div class="col-sm-12 col-md-6 skills--languages-mongo">
                 <div class="row mongo-title">
                   Mongo
                 </div>
@@ -394,9 +419,9 @@
           <span class="year">2015</span>
         </span>
         <h2>Full Stack Developer</h2>
-        <p>Drupal Full Stack Developer in Talentier.
-          PHP Final Degree Project
-        </p>
+        <p class="jump">Sep 2015 - Jul 2016
+          PHP Drupal Framework Full Stack Developer
+          Talentier, Barcelona</p>
       </div>
     </article>
     <article>
@@ -405,21 +430,9 @@
           <span class="month">Oct</span>
           <span class="year">2015</span>
         </span>
-        <h2>Yuzz Program</h2>
+        <h2>Santander Yuzz Program</h2>
         <p>
-          Young "Enterproiers" Contest
-        </p>
-      </div>
-    </article>
-    <article>
-      <div class="inner">
-        <span class="date">
-          <span class="month">Feb</span>
-          <span class="year">2016</span>
-        </span>
-        <h2>IT Security Course</h2>
-        <p>
-          IT Security Course by JEDI Academy UPC
+          Young Entrepreneurs Contest participation
         </p>
       </div>
     </article>
@@ -430,7 +443,9 @@
           <span class="year">2016</span>
         </span>
         <h2>Back End Developer</h2>
-        <p>ASP.NET C# </p>
+        <p class="jump">Oct 2016 - Sep 2018
+          ASP.NET C# Back End Developer
+          Logitravel, Palma de Mallorca</p>
       </div>
     </article>
     <article>
@@ -440,7 +455,8 @@
           <span class="year">2018</span>
         </span>
         <h2>Freelancer</h2>
-        <p>Freelance Developer travelling around the world.</p>
+        <p class="jump">Sep 2018 - Present
+          Freelance Developer travelling around the world</p>
       </div>
     </article>
   </section>
@@ -461,9 +477,9 @@
         <i class="fab fa-github"></i></a>
       <a href="https://codepen.io/Teylor6/" target="_blank" data-toggle="tooltip" data-placement="top" title="CodePen">
         <i class="fab fa-codepen"></i></a>
-      <a href="https://res.cloudinary.com/dqlsibnbz/image/upload/v1548316428/CV_EN.pdf" download data-toggle="tooltip"
+      <a href="https://res.cloudinary.com/dqlsibnbz/image/upload/v1548382779/CV_EN.pdf" download data-toggle="tooltip"
         data-placement="top" title="English Resume" target="_blank"><i class="far fa-file-pdf"></i></a>
-      <a href="https://res.cloudinary.com/dqlsibnbz/image/upload/v1548316433/CV_ES.pdf" download data-toggle="tooltip"
+      <a href="https://res.cloudinary.com/dqlsibnbz/image/upload/v1548382775/CV_ES.pdf" download data-toggle="tooltip"
         data-placement="top" title="Spanish Resume" target="_blank"><i class="far fa-file-pdf"></i></a>
     </div>
   </div>
