@@ -3,6 +3,9 @@
   padding: 30px;
   background-color: $color-black;
   position: relative;
+  .card {
+    border: 0;
+  }
 }
 
 #headingLanguages {
@@ -11,9 +14,27 @@
   font-size: 30px;
   position: relative;
 }
-
 #collapseLanguages {
   background-color: $color-black;
+  padding: 10px;
+  .skills--languages {
+    .php-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+    .js-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+    .csharp-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+    .java-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+  }
 }
 
 #headingBackend {
@@ -22,9 +43,23 @@
   font-size: 30px;
   position: relative;
 }
-
 #collapseBackend {
   background-color: $color-black;
+  padding: 10px;
+  .skills--backend {
+    .nodejs-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+    .drupal-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+    .fire-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+  }
 }
 
 #headingFrontend {
@@ -33,9 +68,27 @@
   font-size: 30px;
   position: relative;
 }
-
 #collapseFrontEnd {
   background-color: $color-black;
+  padding: 10px;
+  .skills--frontend {
+    .css-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+    .sass-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+    .react-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+    .angular-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+  }
 }
 
 #headingDatabases {
@@ -44,45 +97,18 @@
   font-size: 30px;
   position: relative;
 }
-
 #collapseDatabases {
   background-color: $color-black;
-}
-
-.skills--languages {
-  .php-title {
-    font-family: "Josefin Sans", sans-serif;
-    color: #112f41;
-  }
-  .js-title {
-    font-family: "Josefin Sans", sans-serif;
-    color: #112f41;
-  }
-  .csharp-title {
-    font-family: "Josefin Sans", sans-serif;
-    color: #112f41;
-  }
-  .java-title {
-    font-family: "Josefin Sans", sans-serif;
-    color: #112f41;
-  }
-}
-.skills--backend {
-  .nodejs-title {
-    font-family: "Josefin Sans", sans-serif;
-    color: #112f41;
-  }
-}
-.skills--frontend {
-  .nodejs-title {
-    font-family: "Josefin Sans", sans-serif;
-    color: #112f41;
-  }
-}
-.skills--database {
-  .nodejs-title {
-    font-family: "Josefin Sans", sans-serif;
-    color: #112f41;
+  padding: 10px;
+  .skills--database {
+    .sql-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
+    .mongo-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #112f41;
+    }
   }
 }
 
@@ -90,8 +116,8 @@
 $configs: (
   chart-php: (
     svgSize: 200px,
-    externalPercentage: 50,
-    internalPercentage: 75,
+    externalPercentage: 80,
+    internalPercentage: 80,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -104,8 +130,8 @@ $configs: (
   ),
   chart-js: (
     svgSize: 200px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 90,
+    internalPercentage: 80,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -118,8 +144,8 @@ $configs: (
   ),
   chart-csharp: (
     svgSize: 200px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 90,
+    internalPercentage: 80,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -133,7 +159,7 @@ $configs: (
   chart-java: (
     svgSize: 200px,
     externalPercentage: 80,
-    internalPercentage: 20,
+    internalPercentage: 75,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -146,8 +172,22 @@ $configs: (
   ),
   chart-nodejs: (
     svgSize: 200px,
+    externalPercentage: 75,
+    internalPercentage: 50,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb963,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-drupal: (
+    svgSize: 200px,
     externalPercentage: 80,
-    internalPercentage: 20,
+    internalPercentage: 80,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -160,8 +200,8 @@ $configs: (
   ),
   chart-fire: (
     svgSize: 200px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 75,
+    internalPercentage: 50,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -174,8 +214,8 @@ $configs: (
   ),
   chart-css: (
     svgSize: 200px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 95,
+    internalPercentage: 100,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -189,7 +229,7 @@ $configs: (
   chart-sass: (
     svgSize: 200px,
     externalPercentage: 80,
-    internalPercentage: 20,
+    internalPercentage: 80,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -202,8 +242,8 @@ $configs: (
   ),
   chart-react: (
     svgSize: 200px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 75,
+    internalPercentage: 50,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -216,8 +256,8 @@ $configs: (
   ),
   chart-angular: (
     svgSize: 200px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 75,
+    internalPercentage: 50,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -231,7 +271,7 @@ $configs: (
   chart-sql: (
     svgSize: 200px,
     externalPercentage: 80,
-    internalPercentage: 20,
+    internalPercentage: 90,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -244,8 +284,8 @@ $configs: (
   ),
   chart-mongo: (
     svgSize: 200px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 60,
+    internalPercentage: 50,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -439,7 +479,6 @@ $labelData: "";
   }
 }
 
-
 @media (max-width: 500px) {
   #headingLanguages {
     font-size: 12px;
@@ -456,12 +495,12 @@ $labelData: "";
     font-size: 12px;
   }
 
- /* -------CHARTS--------- */
+  /* -------CHARTS--------- */
 $configs: (
   chart-php: (
     svgSize: 100px,
-    externalPercentage: 50,
-    internalPercentage: 75,
+    externalPercentage: 80,
+    internalPercentage: 80,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -474,8 +513,8 @@ $configs: (
   ),
   chart-js: (
     svgSize: 100px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 90,
+    internalPercentage: 80,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -488,8 +527,8 @@ $configs: (
   ),
   chart-csharp: (
     svgSize: 100px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 90,
+    internalPercentage: 80,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -503,7 +542,7 @@ $configs: (
   chart-java: (
     svgSize: 100px,
     externalPercentage: 80,
-    internalPercentage: 20,
+    internalPercentage: 75,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -516,8 +555,22 @@ $configs: (
   ),
   chart-nodejs: (
     svgSize: 100px,
+    externalPercentage: 75,
+    internalPercentage: 50,
+    externalWidth: 10px,
+    internalWidth: 20px,
+    externalBackgroundColor: #112f41,
+    externalPercentatgeColor: #4fb963,
+    internalBackgroundColor: #f2b134,
+    internalPercentatgeColor: #ed553b,
+    labelFontSize: 2.5rem,
+    duration: 3s,
+    animationDelay: 0.5s
+  ),
+  chart-drupal: (
+    svgSize: 100px,
     externalPercentage: 80,
-    internalPercentage: 20,
+    internalPercentage: 80,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -530,8 +583,8 @@ $configs: (
   ),
   chart-fire: (
     svgSize: 100px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 75,
+    internalPercentage: 50,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -544,8 +597,8 @@ $configs: (
   ),
   chart-css: (
     svgSize: 100px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 95,
+    internalPercentage: 100,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -559,7 +612,7 @@ $configs: (
   chart-sass: (
     svgSize: 100px,
     externalPercentage: 80,
-    internalPercentage: 20,
+    internalPercentage: 80,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -572,8 +625,8 @@ $configs: (
   ),
   chart-react: (
     svgSize: 100px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 75,
+    internalPercentage: 50,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -586,8 +639,8 @@ $configs: (
   ),
   chart-angular: (
     svgSize: 100px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 75,
+    internalPercentage: 50,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -601,7 +654,7 @@ $configs: (
   chart-sql: (
     svgSize: 100px,
     externalPercentage: 80,
-    internalPercentage: 20,
+    internalPercentage: 90,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,
@@ -614,8 +667,8 @@ $configs: (
   ),
   chart-mongo: (
     svgSize: 100px,
-    externalPercentage: 80,
-    internalPercentage: 20,
+    externalPercentage: 60,
+    internalPercentage: 50,
     externalWidth: 10px,
     internalWidth: 20px,
     externalBackgroundColor: #112f41,

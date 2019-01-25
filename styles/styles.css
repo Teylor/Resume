@@ -53,6 +53,10 @@ body {
   background-color: #ffd882;
 }
 
+.jump {
+  white-space: pre-line;
+}
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right, rgba(95, 95, 95, 0.2), rgba(0, 0, 0, 0.9)), url(" https://res.cloudinary.com/dqlsibnbz/image/upload/v1548298117/header.jpg");
@@ -287,6 +291,7 @@ body {
 }
 
 h1 {
+  font-family: "Baloo Thambi", cursive;
   text-align: center;
   margin: 20px 0 250px 0;
   color: white;
@@ -328,15 +333,15 @@ h1 {
   top: 50%;
   transform: translateY(-50%);
   background-color: #C5CC40;
-  width: 13.3333333333vw;
+  width: 11.4285714286vw;
   height: 5px;
-  max-width: 166.6666666667px;
+  max-width: 142.8571428571px;
 }
 .input::before {
-  left: calc(-13.3333333333vw + 12.5px);
+  left: calc(-11.4285714286vw + 12.5px);
 }
 .input::after {
-  right: calc(-13.3333333333vw + 12.5px);
+  right: calc(-11.4285714286vw + 12.5px);
 }
 .input.active {
   background-color: #C5CC40;
@@ -398,6 +403,7 @@ h1 {
   color: white;
 }
 .description-flex-container p {
+  font-family: "Nunito", sans-serif;
   margin-top: 0;
   display: none;
   white-space: pre-line;
@@ -408,11 +414,11 @@ h1 {
 
 @media (min-width: 1250px) {
   .input::before {
-    left: -154.1666666667px;
+    left: -130.3571428571px;
   }
 
   .input::after {
-    right: -154.1666666667px;
+    right: -130.3571428571px;
   }
 }
 @media (max-width: 850px) {
@@ -430,10 +436,10 @@ h1 {
     height: 3px;
   }
   .input::before {
-    left: calc(-13.3333333333vw + 8.5px);
+    left: calc(-11.4285714286vw + 8.5px);
   }
   .input::after {
-    right: calc(-13.3333333333vw + 8.5px);
+    right: calc(-11.4285714286vw + 8.5px);
   }
 }
 @media (max-width: 600px) {
@@ -491,6 +497,9 @@ h1 {
   background-color: #ffd882;
   position: relative;
 }
+#skills .card {
+  border: 0;
+}
 
 #headingLanguages {
   color: #4fb99f;
@@ -501,6 +510,23 @@ h1 {
 
 #collapseLanguages {
   background-color: #ffd882;
+  padding: 10px;
+}
+#collapseLanguages .skills--languages .php-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #112f41;
+}
+#collapseLanguages .skills--languages .js-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #112f41;
+}
+#collapseLanguages .skills--languages .csharp-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #112f41;
+}
+#collapseLanguages .skills--languages .java-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #112f41;
 }
 
 #headingBackend {
@@ -512,6 +538,19 @@ h1 {
 
 #collapseBackend {
   background-color: #ffd882;
+  padding: 10px;
+}
+#collapseBackend .skills--backend .nodejs-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #112f41;
+}
+#collapseBackend .skills--backend .drupal-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #112f41;
+}
+#collapseBackend .skills--backend .fire-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #112f41;
 }
 
 #headingFrontend {
@@ -523,6 +562,23 @@ h1 {
 
 #collapseFrontEnd {
   background-color: #ffd882;
+  padding: 10px;
+}
+#collapseFrontEnd .skills--frontend .css-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #112f41;
+}
+#collapseFrontEnd .skills--frontend .sass-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #112f41;
+}
+#collapseFrontEnd .skills--frontend .react-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #112f41;
+}
+#collapseFrontEnd .skills--frontend .angular-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #112f41;
 }
 
 #headingDatabases {
@@ -534,36 +590,13 @@ h1 {
 
 #collapseDatabases {
   background-color: #ffd882;
+  padding: 10px;
 }
-
-.skills--languages .php-title {
+#collapseDatabases .skills--database .sql-title {
   font-family: "Josefin Sans", sans-serif;
   color: #112f41;
 }
-.skills--languages .js-title {
-  font-family: "Josefin Sans", sans-serif;
-  color: #112f41;
-}
-.skills--languages .csharp-title {
-  font-family: "Josefin Sans", sans-serif;
-  color: #112f41;
-}
-.skills--languages .java-title {
-  font-family: "Josefin Sans", sans-serif;
-  color: #112f41;
-}
-
-.skills--backend .nodejs-title {
-  font-family: "Josefin Sans", sans-serif;
-  color: #112f41;
-}
-
-.skills--frontend .nodejs-title {
-  font-family: "Josefin Sans", sans-serif;
-  color: #112f41;
-}
-
-.skills--database .nodejs-title {
+#collapseDatabases .skills--database .mongo-title {
   font-family: "Josefin Sans", sans-serif;
   color: #112f41;
 }
@@ -587,11 +620,11 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-php.animate-external percentatge--external::after {
-  animation: chart-php-external 3s steps(50) forwards;
+  animation: chart-php-external 3s steps(80) forwards;
   animation-delay: 0.5s;
 }
 .chart-php.animate-external percentatge--internal::after {
-  animation: chart-php-internal 3s steps(75) forwards;
+  animation: chart-php-internal 3s steps(80) forwards;
   animation-delay: 0.5s;
 }
 .chart-php.animate-internal svg .circle--internal-background, .chart-php.animate-internal svg .circle--internal-percentatge {
@@ -612,8 +645,8 @@ h1 {
 }
 .chart-php svg .circle--external-percentatge {
   stroke: #4fb99f;
-  stroke-dasharray: 298.3px 596.6px;
-  stroke-dashoffset: 298.3px;
+  stroke-dasharray: 477.28px 596.6px;
+  stroke-dashoffset: 477.28px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -628,8 +661,8 @@ h1 {
 }
 .chart-php svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 423.9px 565.2px;
-  stroke-dashoffset: 423.9px;
+  stroke-dasharray: 452.16px 565.2px;
+  stroke-dashoffset: 452.16px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -705,12 +738,12 @@ h1 {
 
 @keyframes chart-php-external {
   100% {
-    transform: translateY(-125rem);
+    transform: translateY(-200rem);
   }
 }
 @keyframes chart-php-internal {
   100% {
-    transform: translateY(-187.5rem);
+    transform: translateY(-200rem);
   }
 }
 .chart-js {
@@ -731,11 +764,11 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-js.animate-external percentatge--external::after {
-  animation: chart-js-external 3s steps(80) forwards;
+  animation: chart-js-external 3s steps(90) forwards;
   animation-delay: 0.5s;
 }
 .chart-js.animate-external percentatge--internal::after {
-  animation: chart-js-internal 3s steps(20) forwards;
+  animation: chart-js-internal 3s steps(80) forwards;
   animation-delay: 0.5s;
 }
 .chart-js.animate-internal svg .circle--internal-background, .chart-js.animate-internal svg .circle--internal-percentatge {
@@ -756,8 +789,8 @@ h1 {
 }
 .chart-js svg .circle--external-percentatge {
   stroke: #4fb99f;
-  stroke-dasharray: 477.28px 596.6px;
-  stroke-dashoffset: 477.28px;
+  stroke-dasharray: 536.94px 596.6px;
+  stroke-dashoffset: 536.94px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -772,8 +805,8 @@ h1 {
 }
 .chart-js svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
+  stroke-dasharray: 452.16px 565.2px;
+  stroke-dashoffset: 452.16px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -849,12 +882,12 @@ h1 {
 
 @keyframes chart-js-external {
   100% {
-    transform: translateY(-200rem);
+    transform: translateY(-225rem);
   }
 }
 @keyframes chart-js-internal {
   100% {
-    transform: translateY(-50rem);
+    transform: translateY(-200rem);
   }
 }
 .chart-csharp {
@@ -875,11 +908,11 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-csharp.animate-external percentatge--external::after {
-  animation: chart-csharp-external 3s steps(80) forwards;
+  animation: chart-csharp-external 3s steps(90) forwards;
   animation-delay: 0.5s;
 }
 .chart-csharp.animate-external percentatge--internal::after {
-  animation: chart-csharp-internal 3s steps(20) forwards;
+  animation: chart-csharp-internal 3s steps(80) forwards;
   animation-delay: 0.5s;
 }
 .chart-csharp.animate-internal svg .circle--internal-background, .chart-csharp.animate-internal svg .circle--internal-percentatge {
@@ -900,8 +933,8 @@ h1 {
 }
 .chart-csharp svg .circle--external-percentatge {
   stroke: #4fb99f;
-  stroke-dasharray: 477.28px 596.6px;
-  stroke-dashoffset: 477.28px;
+  stroke-dasharray: 536.94px 596.6px;
+  stroke-dashoffset: 536.94px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -916,8 +949,8 @@ h1 {
 }
 .chart-csharp svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
+  stroke-dasharray: 452.16px 565.2px;
+  stroke-dashoffset: 452.16px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -993,12 +1026,12 @@ h1 {
 
 @keyframes chart-csharp-external {
   100% {
-    transform: translateY(-200rem);
+    transform: translateY(-225rem);
   }
 }
 @keyframes chart-csharp-internal {
   100% {
-    transform: translateY(-50rem);
+    transform: translateY(-200rem);
   }
 }
 .chart-java {
@@ -1023,7 +1056,7 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-java.animate-external percentatge--internal::after {
-  animation: chart-java-internal 3s steps(20) forwards;
+  animation: chart-java-internal 3s steps(75) forwards;
   animation-delay: 0.5s;
 }
 .chart-java.animate-internal svg .circle--internal-background, .chart-java.animate-internal svg .circle--internal-percentatge {
@@ -1060,8 +1093,8 @@ h1 {
 }
 .chart-java svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
+  stroke-dasharray: 423.9px 565.2px;
+  stroke-dashoffset: 423.9px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -1142,7 +1175,7 @@ h1 {
 }
 @keyframes chart-java-internal {
   100% {
-    transform: translateY(-50rem);
+    transform: translateY(-187.5rem);
   }
 }
 .chart-nodejs {
@@ -1163,11 +1196,11 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-nodejs.animate-external percentatge--external::after {
-  animation: chart-nodejs-external 3s steps(80) forwards;
+  animation: chart-nodejs-external 3s steps(75) forwards;
   animation-delay: 0.5s;
 }
 .chart-nodejs.animate-external percentatge--internal::after {
-  animation: chart-nodejs-internal 3s steps(20) forwards;
+  animation: chart-nodejs-internal 3s steps(50) forwards;
   animation-delay: 0.5s;
 }
 .chart-nodejs.animate-internal svg .circle--internal-background, .chart-nodejs.animate-internal svg .circle--internal-percentatge {
@@ -1188,8 +1221,8 @@ h1 {
 }
 .chart-nodejs svg .circle--external-percentatge {
   stroke: #4fb963;
-  stroke-dasharray: 477.28px 596.6px;
-  stroke-dashoffset: 477.28px;
+  stroke-dasharray: 447.45px 596.6px;
+  stroke-dashoffset: 447.45px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -1204,8 +1237,8 @@ h1 {
 }
 .chart-nodejs svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
+  stroke-dasharray: 282.6px 565.2px;
+  stroke-dashoffset: 282.6px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -1281,12 +1314,156 @@ h1 {
 
 @keyframes chart-nodejs-external {
   100% {
-    transform: translateY(-200rem);
+    transform: translateY(-187.5rem);
   }
 }
 @keyframes chart-nodejs-internal {
   100% {
-    transform: translateY(-50rem);
+    transform: translateY(-125rem);
+  }
+}
+.chart-drupal {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  position: relative;
+  left: 25%;
+  /* &:hover .percentatge--external-tooltip {
+    visibility: visible;
+  } */
+  /* &:hover .percentatge--internal-tooltip {
+    visibility: visible;
+  } */
+}
+.chart-drupal.animate-external svg .circle--external-background, .chart-drupal.animate-external svg .circle--external-percentatge {
+  animation: chart-offset 3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+.chart-drupal.animate-external percentatge--external::after {
+  animation: chart-drupal-external 3s steps(80) forwards;
+  animation-delay: 0.5s;
+}
+.chart-drupal.animate-external percentatge--internal::after {
+  animation: chart-drupal-internal 3s steps(80) forwards;
+  animation-delay: 0.5s;
+}
+.chart-drupal.animate-internal svg .circle--internal-background, .chart-drupal.animate-internal svg .circle--internal-percentatge {
+  animation: chart-offset 3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+.chart-drupal svg {
+  width: 100%;
+  height: 100%;
+}
+.chart-drupal svg .circle--external-background, .chart-drupal svg .circle--external-percentatge {
+  r: 95px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #112f41;
+  stroke-width: 10px;
+}
+.chart-drupal svg .circle--external-percentatge {
+  stroke: #4fb963;
+  stroke-dasharray: 477.28px 596.6px;
+  stroke-dashoffset: 477.28px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-drupal svg .circle--internal-background, .chart-drupal svg .circle--internal-percentatge {
+  r: 90px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #f2b134;
+  stroke-width: 7px;
+}
+.chart-drupal svg .circle--internal-percentatge {
+  stroke: #ed553b;
+  stroke-dasharray: 452.16px 565.2px;
+  stroke-dashoffset: 452.16px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-drupal percentatge--external {
+  display: inline-block;
+  width: 100%;
+  height: 2.5rem;
+  overflow: hidden;
+  text-align: center;
+  color: #4fb963;
+  position: absolute;
+  top: calc(40% - 1.25rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-drupal percentatge--external::after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.chart-drupal percentatge--internal {
+  display: inline-block;
+  width: 100%;
+  height: 2.5rem;
+  overflow: hidden;
+  text-align: center;
+  color: #ed553b;
+  position: absolute;
+  top: calc(60% - 1.25rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-drupal percentatge--internal::after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.chart-drupal .percentatge--external-tooltip {
+  /* visibility: hidden; */
+  width: 84px;
+  height: 22px;
+  bottom: 73%;
+  left: 58%;
+  margin-left: -60px;
+  background-color: #112f41;
+  color: #4fb963;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.chart-drupal .percentatge--internal-tooltip {
+  /* visibility: hidden; */
+  width: 84px;
+  height: 22px;
+  top: 73%;
+  left: 58%;
+  margin-left: -60px;
+  background-color: #f2b134;
+  color: #ed553b;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+@keyframes chart-drupal-external {
+  100% {
+    transform: translateY(-200rem);
+  }
+}
+@keyframes chart-drupal-internal {
+  100% {
+    transform: translateY(-200rem);
   }
 }
 .chart-fire {
@@ -1307,11 +1484,11 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-fire.animate-external percentatge--external::after {
-  animation: chart-fire-external 3s steps(80) forwards;
+  animation: chart-fire-external 3s steps(75) forwards;
   animation-delay: 0.5s;
 }
 .chart-fire.animate-external percentatge--internal::after {
-  animation: chart-fire-internal 3s steps(20) forwards;
+  animation: chart-fire-internal 3s steps(50) forwards;
   animation-delay: 0.5s;
 }
 .chart-fire.animate-internal svg .circle--internal-background, .chart-fire.animate-internal svg .circle--internal-percentatge {
@@ -1332,8 +1509,8 @@ h1 {
 }
 .chart-fire svg .circle--external-percentatge {
   stroke: #4fb963;
-  stroke-dasharray: 477.28px 596.6px;
-  stroke-dashoffset: 477.28px;
+  stroke-dasharray: 447.45px 596.6px;
+  stroke-dashoffset: 447.45px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -1348,8 +1525,8 @@ h1 {
 }
 .chart-fire svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
+  stroke-dasharray: 282.6px 565.2px;
+  stroke-dashoffset: 282.6px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -1425,12 +1602,12 @@ h1 {
 
 @keyframes chart-fire-external {
   100% {
-    transform: translateY(-200rem);
+    transform: translateY(-187.5rem);
   }
 }
 @keyframes chart-fire-internal {
   100% {
-    transform: translateY(-50rem);
+    transform: translateY(-125rem);
   }
 }
 .chart-css {
@@ -1451,11 +1628,11 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-css.animate-external percentatge--external::after {
-  animation: chart-css-external 3s steps(80) forwards;
+  animation: chart-css-external 3s steps(95) forwards;
   animation-delay: 0.5s;
 }
 .chart-css.animate-external percentatge--internal::after {
-  animation: chart-css-internal 3s steps(20) forwards;
+  animation: chart-css-internal 3s steps(100) forwards;
   animation-delay: 0.5s;
 }
 .chart-css.animate-internal svg .circle--internal-background, .chart-css.animate-internal svg .circle--internal-percentatge {
@@ -1476,8 +1653,8 @@ h1 {
 }
 .chart-css svg .circle--external-percentatge {
   stroke: #c283ad;
-  stroke-dasharray: 477.28px 596.6px;
-  stroke-dashoffset: 477.28px;
+  stroke-dasharray: 566.77px 596.6px;
+  stroke-dashoffset: 566.77px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -1492,8 +1669,8 @@ h1 {
 }
 .chart-css svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
+  stroke-dasharray: 565.2px 565.2px;
+  stroke-dashoffset: 565.2px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -1569,12 +1746,12 @@ h1 {
 
 @keyframes chart-css-external {
   100% {
-    transform: translateY(-200rem);
+    transform: translateY(-237.5rem);
   }
 }
 @keyframes chart-css-internal {
   100% {
-    transform: translateY(-50rem);
+    transform: translateY(-250rem);
   }
 }
 .chart-sass {
@@ -1599,7 +1776,7 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-sass.animate-external percentatge--internal::after {
-  animation: chart-sass-internal 3s steps(20) forwards;
+  animation: chart-sass-internal 3s steps(80) forwards;
   animation-delay: 0.5s;
 }
 .chart-sass.animate-internal svg .circle--internal-background, .chart-sass.animate-internal svg .circle--internal-percentatge {
@@ -1636,8 +1813,8 @@ h1 {
 }
 .chart-sass svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
+  stroke-dasharray: 452.16px 565.2px;
+  stroke-dashoffset: 452.16px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -1718,7 +1895,7 @@ h1 {
 }
 @keyframes chart-sass-internal {
   100% {
-    transform: translateY(-50rem);
+    transform: translateY(-200rem);
   }
 }
 .chart-react {
@@ -1739,11 +1916,11 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-react.animate-external percentatge--external::after {
-  animation: chart-react-external 3s steps(80) forwards;
+  animation: chart-react-external 3s steps(75) forwards;
   animation-delay: 0.5s;
 }
 .chart-react.animate-external percentatge--internal::after {
-  animation: chart-react-internal 3s steps(20) forwards;
+  animation: chart-react-internal 3s steps(50) forwards;
   animation-delay: 0.5s;
 }
 .chart-react.animate-internal svg .circle--internal-background, .chart-react.animate-internal svg .circle--internal-percentatge {
@@ -1764,8 +1941,8 @@ h1 {
 }
 .chart-react svg .circle--external-percentatge {
   stroke: #c283ad;
-  stroke-dasharray: 477.28px 596.6px;
-  stroke-dashoffset: 477.28px;
+  stroke-dasharray: 447.45px 596.6px;
+  stroke-dashoffset: 447.45px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -1780,8 +1957,8 @@ h1 {
 }
 .chart-react svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
+  stroke-dasharray: 282.6px 565.2px;
+  stroke-dashoffset: 282.6px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -1857,12 +2034,12 @@ h1 {
 
 @keyframes chart-react-external {
   100% {
-    transform: translateY(-200rem);
+    transform: translateY(-187.5rem);
   }
 }
 @keyframes chart-react-internal {
   100% {
-    transform: translateY(-50rem);
+    transform: translateY(-125rem);
   }
 }
 .chart-angular {
@@ -1883,11 +2060,11 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-angular.animate-external percentatge--external::after {
-  animation: chart-angular-external 3s steps(80) forwards;
+  animation: chart-angular-external 3s steps(75) forwards;
   animation-delay: 0.5s;
 }
 .chart-angular.animate-external percentatge--internal::after {
-  animation: chart-angular-internal 3s steps(20) forwards;
+  animation: chart-angular-internal 3s steps(50) forwards;
   animation-delay: 0.5s;
 }
 .chart-angular.animate-internal svg .circle--internal-background, .chart-angular.animate-internal svg .circle--internal-percentatge {
@@ -1908,8 +2085,8 @@ h1 {
 }
 .chart-angular svg .circle--external-percentatge {
   stroke: #c283ad;
-  stroke-dasharray: 477.28px 596.6px;
-  stroke-dashoffset: 477.28px;
+  stroke-dasharray: 447.45px 596.6px;
+  stroke-dashoffset: 447.45px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -1924,8 +2101,8 @@ h1 {
 }
 .chart-angular svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
+  stroke-dasharray: 282.6px 565.2px;
+  stroke-dashoffset: 282.6px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -2001,12 +2178,12 @@ h1 {
 
 @keyframes chart-angular-external {
   100% {
-    transform: translateY(-200rem);
+    transform: translateY(-187.5rem);
   }
 }
 @keyframes chart-angular-internal {
   100% {
-    transform: translateY(-50rem);
+    transform: translateY(-125rem);
   }
 }
 .chart-sql {
@@ -2031,7 +2208,7 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-sql.animate-external percentatge--internal::after {
-  animation: chart-sql-internal 3s steps(20) forwards;
+  animation: chart-sql-internal 3s steps(90) forwards;
   animation-delay: 0.5s;
 }
 .chart-sql.animate-internal svg .circle--internal-background, .chart-sql.animate-internal svg .circle--internal-percentatge {
@@ -2068,8 +2245,8 @@ h1 {
 }
 .chart-sql svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
+  stroke-dasharray: 508.68px 565.2px;
+  stroke-dashoffset: 508.68px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -2150,7 +2327,7 @@ h1 {
 }
 @keyframes chart-sql-internal {
   100% {
-    transform: translateY(-50rem);
+    transform: translateY(-225rem);
   }
 }
 .chart-mongo {
@@ -2171,11 +2348,11 @@ h1 {
   animation-delay: 0.5s;
 }
 .chart-mongo.animate-external percentatge--external::after {
-  animation: chart-mongo-external 3s steps(80) forwards;
+  animation: chart-mongo-external 3s steps(60) forwards;
   animation-delay: 0.5s;
 }
 .chart-mongo.animate-external percentatge--internal::after {
-  animation: chart-mongo-internal 3s steps(20) forwards;
+  animation: chart-mongo-internal 3s steps(50) forwards;
   animation-delay: 0.5s;
 }
 .chart-mongo.animate-internal svg .circle--internal-background, .chart-mongo.animate-internal svg .circle--internal-percentatge {
@@ -2196,8 +2373,8 @@ h1 {
 }
 .chart-mongo svg .circle--external-percentatge {
   stroke: #de4dec;
-  stroke-dasharray: 477.28px 596.6px;
-  stroke-dashoffset: 477.28px;
+  stroke-dasharray: 357.96px 596.6px;
+  stroke-dashoffset: 357.96px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -2212,8 +2389,8 @@ h1 {
 }
 .chart-mongo svg .circle--internal-percentatge {
   stroke: #ed553b;
-  stroke-dasharray: 113.04px 565.2px;
-  stroke-dashoffset: 113.04px;
+  stroke-dasharray: 282.6px 565.2px;
+  stroke-dashoffset: 282.6px;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
@@ -2289,12 +2466,12 @@ h1 {
 
 @keyframes chart-mongo-external {
   100% {
-    transform: translateY(-200rem);
+    transform: translateY(-150rem);
   }
 }
 @keyframes chart-mongo-internal {
   100% {
-    transform: translateY(-50rem);
+    transform: translateY(-125rem);
   }
 }
 @media (max-width: 500px) {
@@ -2333,11 +2510,11 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-php.animate-external percentatge--external::after {
-    animation: chart-php-external 3s steps(50) forwards;
+    animation: chart-php-external 3s steps(80) forwards;
     animation-delay: 0.5s;
   }
   .chart-php.animate-external percentatge--internal::after {
-    animation: chart-php-internal 3s steps(75) forwards;
+    animation: chart-php-internal 3s steps(80) forwards;
     animation-delay: 0.5s;
   }
   .chart-php.animate-internal svg .circle--internal-background, .chart-php.animate-internal svg .circle--internal-percentatge {
@@ -2358,8 +2535,8 @@ h1 {
   }
   .chart-php svg .circle--external-percentatge {
     stroke: #4fb99f;
-    stroke-dasharray: 141.3px 282.6px;
-    stroke-dashoffset: 141.3px;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2374,8 +2551,8 @@ h1 {
   }
   .chart-php svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 188.4px 251.2px;
-    stroke-dashoffset: 188.4px;
+    stroke-dasharray: 200.96px 251.2px;
+    stroke-dashoffset: 200.96px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2399,12 +2576,12 @@ h1 {
 
   @keyframes chart-php-external {
     100% {
-      transform: translateY(-125rem);
+      transform: translateY(-200rem);
     }
   }
   @keyframes chart-php-internal {
     100% {
-      transform: translateY(-187.5rem);
+      transform: translateY(-200rem);
     }
   }
   .chart-js {
@@ -2425,11 +2602,11 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-js.animate-external percentatge--external::after {
-    animation: chart-js-external 3s steps(80) forwards;
+    animation: chart-js-external 3s steps(90) forwards;
     animation-delay: 0.5s;
   }
   .chart-js.animate-external percentatge--internal::after {
-    animation: chart-js-internal 3s steps(20) forwards;
+    animation: chart-js-internal 3s steps(80) forwards;
     animation-delay: 0.5s;
   }
   .chart-js.animate-internal svg .circle--internal-background, .chart-js.animate-internal svg .circle--internal-percentatge {
@@ -2450,8 +2627,8 @@ h1 {
   }
   .chart-js svg .circle--external-percentatge {
     stroke: #4fb99f;
-    stroke-dasharray: 226.08px 282.6px;
-    stroke-dashoffset: 226.08px;
+    stroke-dasharray: 254.34px 282.6px;
+    stroke-dashoffset: 254.34px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2466,8 +2643,8 @@ h1 {
   }
   .chart-js svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 50.24px 251.2px;
-    stroke-dashoffset: 50.24px;
+    stroke-dasharray: 200.96px 251.2px;
+    stroke-dashoffset: 200.96px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2491,12 +2668,12 @@ h1 {
 
   @keyframes chart-js-external {
     100% {
-      transform: translateY(-200rem);
+      transform: translateY(-225rem);
     }
   }
   @keyframes chart-js-internal {
     100% {
-      transform: translateY(-50rem);
+      transform: translateY(-200rem);
     }
   }
   .chart-csharp {
@@ -2517,11 +2694,11 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-csharp.animate-external percentatge--external::after {
-    animation: chart-csharp-external 3s steps(80) forwards;
+    animation: chart-csharp-external 3s steps(90) forwards;
     animation-delay: 0.5s;
   }
   .chart-csharp.animate-external percentatge--internal::after {
-    animation: chart-csharp-internal 3s steps(20) forwards;
+    animation: chart-csharp-internal 3s steps(80) forwards;
     animation-delay: 0.5s;
   }
   .chart-csharp.animate-internal svg .circle--internal-background, .chart-csharp.animate-internal svg .circle--internal-percentatge {
@@ -2542,8 +2719,8 @@ h1 {
   }
   .chart-csharp svg .circle--external-percentatge {
     stroke: #4fb99f;
-    stroke-dasharray: 226.08px 282.6px;
-    stroke-dashoffset: 226.08px;
+    stroke-dasharray: 254.34px 282.6px;
+    stroke-dashoffset: 254.34px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2558,8 +2735,8 @@ h1 {
   }
   .chart-csharp svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 50.24px 251.2px;
-    stroke-dashoffset: 50.24px;
+    stroke-dasharray: 200.96px 251.2px;
+    stroke-dashoffset: 200.96px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2583,12 +2760,12 @@ h1 {
 
   @keyframes chart-csharp-external {
     100% {
-      transform: translateY(-200rem);
+      transform: translateY(-225rem);
     }
   }
   @keyframes chart-csharp-internal {
     100% {
-      transform: translateY(-50rem);
+      transform: translateY(-200rem);
     }
   }
   .chart-java {
@@ -2613,7 +2790,7 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-java.animate-external percentatge--internal::after {
-    animation: chart-java-internal 3s steps(20) forwards;
+    animation: chart-java-internal 3s steps(75) forwards;
     animation-delay: 0.5s;
   }
   .chart-java.animate-internal svg .circle--internal-background, .chart-java.animate-internal svg .circle--internal-percentatge {
@@ -2650,8 +2827,8 @@ h1 {
   }
   .chart-java svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 50.24px 251.2px;
-    stroke-dashoffset: 50.24px;
+    stroke-dasharray: 188.4px 251.2px;
+    stroke-dashoffset: 188.4px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2680,7 +2857,7 @@ h1 {
   }
   @keyframes chart-java-internal {
     100% {
-      transform: translateY(-50rem);
+      transform: translateY(-187.5rem);
     }
   }
   .chart-nodejs {
@@ -2701,11 +2878,11 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-nodejs.animate-external percentatge--external::after {
-    animation: chart-nodejs-external 3s steps(80) forwards;
+    animation: chart-nodejs-external 3s steps(75) forwards;
     animation-delay: 0.5s;
   }
   .chart-nodejs.animate-external percentatge--internal::after {
-    animation: chart-nodejs-internal 3s steps(20) forwards;
+    animation: chart-nodejs-internal 3s steps(50) forwards;
     animation-delay: 0.5s;
   }
   .chart-nodejs.animate-internal svg .circle--internal-background, .chart-nodejs.animate-internal svg .circle--internal-percentatge {
@@ -2726,8 +2903,8 @@ h1 {
   }
   .chart-nodejs svg .circle--external-percentatge {
     stroke: #4fb963;
-    stroke-dasharray: 226.08px 282.6px;
-    stroke-dashoffset: 226.08px;
+    stroke-dasharray: 211.95px 282.6px;
+    stroke-dashoffset: 211.95px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2742,8 +2919,8 @@ h1 {
   }
   .chart-nodejs svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 50.24px 251.2px;
-    stroke-dashoffset: 50.24px;
+    stroke-dasharray: 125.6px 251.2px;
+    stroke-dashoffset: 125.6px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2767,12 +2944,104 @@ h1 {
 
   @keyframes chart-nodejs-external {
     100% {
-      transform: translateY(-200rem);
+      transform: translateY(-187.5rem);
     }
   }
   @keyframes chart-nodejs-internal {
     100% {
-      transform: translateY(-50rem);
+      transform: translateY(-125rem);
+    }
+  }
+  .chart-drupal {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 25%;
+    /* &:hover .percentatge--external-tooltip {
+      visibility: visible;
+    } */
+    /* &:hover .percentatge--internal-tooltip {
+      visibility: visible;
+    } */
+  }
+  .chart-drupal.animate-external svg .circle--external-background, .chart-drupal.animate-external svg .circle--external-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-drupal.animate-external percentatge--external::after {
+    animation: chart-drupal-external 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-drupal.animate-external percentatge--internal::after {
+    animation: chart-drupal-internal 3s steps(80) forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-drupal.animate-internal svg .circle--internal-background, .chart-drupal.animate-internal svg .circle--internal-percentatge {
+    animation: chart-offset 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .chart-drupal svg {
+    width: 100%;
+    height: 100%;
+  }
+  .chart-drupal svg .circle--external-background, .chart-drupal svg .circle--external-percentatge {
+    r: 45px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #112f41;
+    stroke-width: 10px;
+  }
+  .chart-drupal svg .circle--external-percentatge {
+    stroke: #4fb963;
+    stroke-dasharray: 226.08px 282.6px;
+    stroke-dashoffset: 226.08px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-drupal svg .circle--internal-background, .chart-drupal svg .circle--internal-percentatge {
+    r: 40px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f2b134;
+    stroke-width: 7px;
+  }
+  .chart-drupal svg .circle--internal-percentatge {
+    stroke: #ed553b;
+    stroke-dasharray: 200.96px 251.2px;
+    stroke-dashoffset: 200.96px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .chart-drupal percentatge--external {
+    display: none;
+  }
+  .chart-drupal percentatge--internal {
+    display: none;
+  }
+  .chart-drupal .percentatge--external-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+  .chart-drupal .percentatge--internal-tooltip {
+    /* visibility: hidden; */
+    margin-left: 55px;
+    z-index: 0;
+  }
+
+  @keyframes chart-drupal-external {
+    100% {
+      transform: translateY(-200rem);
+    }
+  }
+  @keyframes chart-drupal-internal {
+    100% {
+      transform: translateY(-200rem);
     }
   }
   .chart-fire {
@@ -2793,11 +3062,11 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-fire.animate-external percentatge--external::after {
-    animation: chart-fire-external 3s steps(80) forwards;
+    animation: chart-fire-external 3s steps(75) forwards;
     animation-delay: 0.5s;
   }
   .chart-fire.animate-external percentatge--internal::after {
-    animation: chart-fire-internal 3s steps(20) forwards;
+    animation: chart-fire-internal 3s steps(50) forwards;
     animation-delay: 0.5s;
   }
   .chart-fire.animate-internal svg .circle--internal-background, .chart-fire.animate-internal svg .circle--internal-percentatge {
@@ -2818,8 +3087,8 @@ h1 {
   }
   .chart-fire svg .circle--external-percentatge {
     stroke: #4fb963;
-    stroke-dasharray: 226.08px 282.6px;
-    stroke-dashoffset: 226.08px;
+    stroke-dasharray: 211.95px 282.6px;
+    stroke-dashoffset: 211.95px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2834,8 +3103,8 @@ h1 {
   }
   .chart-fire svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 50.24px 251.2px;
-    stroke-dashoffset: 50.24px;
+    stroke-dasharray: 125.6px 251.2px;
+    stroke-dashoffset: 125.6px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2859,12 +3128,12 @@ h1 {
 
   @keyframes chart-fire-external {
     100% {
-      transform: translateY(-200rem);
+      transform: translateY(-187.5rem);
     }
   }
   @keyframes chart-fire-internal {
     100% {
-      transform: translateY(-50rem);
+      transform: translateY(-125rem);
     }
   }
   .chart-css {
@@ -2885,11 +3154,11 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-css.animate-external percentatge--external::after {
-    animation: chart-css-external 3s steps(80) forwards;
+    animation: chart-css-external 3s steps(95) forwards;
     animation-delay: 0.5s;
   }
   .chart-css.animate-external percentatge--internal::after {
-    animation: chart-css-internal 3s steps(20) forwards;
+    animation: chart-css-internal 3s steps(100) forwards;
     animation-delay: 0.5s;
   }
   .chart-css.animate-internal svg .circle--internal-background, .chart-css.animate-internal svg .circle--internal-percentatge {
@@ -2910,8 +3179,8 @@ h1 {
   }
   .chart-css svg .circle--external-percentatge {
     stroke: #c283ad;
-    stroke-dasharray: 226.08px 282.6px;
-    stroke-dashoffset: 226.08px;
+    stroke-dasharray: 268.47px 282.6px;
+    stroke-dashoffset: 268.47px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2926,8 +3195,8 @@ h1 {
   }
   .chart-css svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 50.24px 251.2px;
-    stroke-dashoffset: 50.24px;
+    stroke-dasharray: 251.2px 251.2px;
+    stroke-dashoffset: 251.2px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -2951,12 +3220,12 @@ h1 {
 
   @keyframes chart-css-external {
     100% {
-      transform: translateY(-200rem);
+      transform: translateY(-237.5rem);
     }
   }
   @keyframes chart-css-internal {
     100% {
-      transform: translateY(-50rem);
+      transform: translateY(-250rem);
     }
   }
   .chart-sass {
@@ -2981,7 +3250,7 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-sass.animate-external percentatge--internal::after {
-    animation: chart-sass-internal 3s steps(20) forwards;
+    animation: chart-sass-internal 3s steps(80) forwards;
     animation-delay: 0.5s;
   }
   .chart-sass.animate-internal svg .circle--internal-background, .chart-sass.animate-internal svg .circle--internal-percentatge {
@@ -3018,8 +3287,8 @@ h1 {
   }
   .chart-sass svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 50.24px 251.2px;
-    stroke-dashoffset: 50.24px;
+    stroke-dasharray: 200.96px 251.2px;
+    stroke-dashoffset: 200.96px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -3048,7 +3317,7 @@ h1 {
   }
   @keyframes chart-sass-internal {
     100% {
-      transform: translateY(-50rem);
+      transform: translateY(-200rem);
     }
   }
   .chart-react {
@@ -3069,11 +3338,11 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-react.animate-external percentatge--external::after {
-    animation: chart-react-external 3s steps(80) forwards;
+    animation: chart-react-external 3s steps(75) forwards;
     animation-delay: 0.5s;
   }
   .chart-react.animate-external percentatge--internal::after {
-    animation: chart-react-internal 3s steps(20) forwards;
+    animation: chart-react-internal 3s steps(50) forwards;
     animation-delay: 0.5s;
   }
   .chart-react.animate-internal svg .circle--internal-background, .chart-react.animate-internal svg .circle--internal-percentatge {
@@ -3094,8 +3363,8 @@ h1 {
   }
   .chart-react svg .circle--external-percentatge {
     stroke: #c283ad;
-    stroke-dasharray: 226.08px 282.6px;
-    stroke-dashoffset: 226.08px;
+    stroke-dasharray: 211.95px 282.6px;
+    stroke-dashoffset: 211.95px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -3110,8 +3379,8 @@ h1 {
   }
   .chart-react svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 50.24px 251.2px;
-    stroke-dashoffset: 50.24px;
+    stroke-dasharray: 125.6px 251.2px;
+    stroke-dashoffset: 125.6px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -3135,12 +3404,12 @@ h1 {
 
   @keyframes chart-react-external {
     100% {
-      transform: translateY(-200rem);
+      transform: translateY(-187.5rem);
     }
   }
   @keyframes chart-react-internal {
     100% {
-      transform: translateY(-50rem);
+      transform: translateY(-125rem);
     }
   }
   .chart-angular {
@@ -3161,11 +3430,11 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-angular.animate-external percentatge--external::after {
-    animation: chart-angular-external 3s steps(80) forwards;
+    animation: chart-angular-external 3s steps(75) forwards;
     animation-delay: 0.5s;
   }
   .chart-angular.animate-external percentatge--internal::after {
-    animation: chart-angular-internal 3s steps(20) forwards;
+    animation: chart-angular-internal 3s steps(50) forwards;
     animation-delay: 0.5s;
   }
   .chart-angular.animate-internal svg .circle--internal-background, .chart-angular.animate-internal svg .circle--internal-percentatge {
@@ -3186,8 +3455,8 @@ h1 {
   }
   .chart-angular svg .circle--external-percentatge {
     stroke: #c283ad;
-    stroke-dasharray: 226.08px 282.6px;
-    stroke-dashoffset: 226.08px;
+    stroke-dasharray: 211.95px 282.6px;
+    stroke-dashoffset: 211.95px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -3202,8 +3471,8 @@ h1 {
   }
   .chart-angular svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 50.24px 251.2px;
-    stroke-dashoffset: 50.24px;
+    stroke-dasharray: 125.6px 251.2px;
+    stroke-dashoffset: 125.6px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -3227,12 +3496,12 @@ h1 {
 
   @keyframes chart-angular-external {
     100% {
-      transform: translateY(-200rem);
+      transform: translateY(-187.5rem);
     }
   }
   @keyframes chart-angular-internal {
     100% {
-      transform: translateY(-50rem);
+      transform: translateY(-125rem);
     }
   }
   .chart-sql {
@@ -3257,7 +3526,7 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-sql.animate-external percentatge--internal::after {
-    animation: chart-sql-internal 3s steps(20) forwards;
+    animation: chart-sql-internal 3s steps(90) forwards;
     animation-delay: 0.5s;
   }
   .chart-sql.animate-internal svg .circle--internal-background, .chart-sql.animate-internal svg .circle--internal-percentatge {
@@ -3294,8 +3563,8 @@ h1 {
   }
   .chart-sql svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 50.24px 251.2px;
-    stroke-dashoffset: 50.24px;
+    stroke-dasharray: 226.08px 251.2px;
+    stroke-dashoffset: 226.08px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -3324,7 +3593,7 @@ h1 {
   }
   @keyframes chart-sql-internal {
     100% {
-      transform: translateY(-50rem);
+      transform: translateY(-225rem);
     }
   }
   .chart-mongo {
@@ -3345,11 +3614,11 @@ h1 {
     animation-delay: 0.5s;
   }
   .chart-mongo.animate-external percentatge--external::after {
-    animation: chart-mongo-external 3s steps(80) forwards;
+    animation: chart-mongo-external 3s steps(60) forwards;
     animation-delay: 0.5s;
   }
   .chart-mongo.animate-external percentatge--internal::after {
-    animation: chart-mongo-internal 3s steps(20) forwards;
+    animation: chart-mongo-internal 3s steps(50) forwards;
     animation-delay: 0.5s;
   }
   .chart-mongo.animate-internal svg .circle--internal-background, .chart-mongo.animate-internal svg .circle--internal-percentatge {
@@ -3370,8 +3639,8 @@ h1 {
   }
   .chart-mongo svg .circle--external-percentatge {
     stroke: #de4dec;
-    stroke-dasharray: 226.08px 282.6px;
-    stroke-dashoffset: 226.08px;
+    stroke-dasharray: 169.56px 282.6px;
+    stroke-dashoffset: 169.56px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -3386,8 +3655,8 @@ h1 {
   }
   .chart-mongo svg .circle--internal-percentatge {
     stroke: #ed553b;
-    stroke-dasharray: 50.24px 251.2px;
-    stroke-dashoffset: 50.24px;
+    stroke-dasharray: 125.6px 251.2px;
+    stroke-dashoffset: 125.6px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -3411,12 +3680,12 @@ h1 {
 
   @keyframes chart-mongo-external {
     100% {
-      transform: translateY(-200rem);
+      transform: translateY(-150rem);
     }
   }
   @keyframes chart-mongo-internal {
     100% {
-      transform: translateY(-50rem);
+      transform: translateY(-125rem);
     }
   }
 }
@@ -3441,7 +3710,7 @@ section#experience:before {
 
 section#experience article {
   width: 100%;
-  height: 20%;
+  height: 25%;
   position: relative;
 }
 
@@ -3518,6 +3787,7 @@ section#experience article div.inner p {
   background: #fff;
   color: #656565;
   border-radius: 0 0 6px 6px;
+  font-family: "Nunito", sans-serif;
 }
 
 section#experience article:nth-child(2n+2) div.inner {
@@ -3560,14 +3830,12 @@ section#experience article:nth-child(4) div.inner h2:after {
   background: #1abc9c;
 }
 
-section#experience article:nth-child(5) div.inner h2 {
+/* section#experience article:nth-child(5) div.inner h2 {
   background: #9b59b6;
 }
-
 section#experience article:nth-child(5) div.inner h2:after {
   background: #9b59b6;
-}
-
+} */
 @media (max-width: 1024px) {
   section#experience:before {
     left: 10%;
